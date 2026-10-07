@@ -1,0 +1,307 @@
+Build **ONLY Section 7 — “The Bonuses”** of the redesigned Flirt Blueprint website.
+
+Do not modify Sections 1–6. Do not build pricing, FAQ, guarantee, final CTA, or footer yet. Stop after completing this section.
+
+## PURPOSE
+
+This section should make the offer feel substantially richer without turning the page into a cheap “BONUS! BONUS! BONUS!” internet-marketing stack.
+
+The existing business has multiple bonuses. The redesign should preserve that commercial value while presenting it with the same **editorial luxury / sophisticated relationship-education** aesthetic established throughout the page.
+
+The visitor should feel:
+
+> “I’m getting considerably more than just one guide.”
+
+But the section should still feel premium and intentional.
+
+---
+
+## 1. SECTION INTRODUCTION
+
+Create a strong editorial transition from Section 6.
+
+Use a small eyebrow such as:
+
+**AND THERE'S MORE**
+
+Then a large serif headline along the lines of:
+
+**The F-Formula comes with more than the formula itself.**
+
+Supporting copy should explain that the core framework is supported by additional resources designed to help the customer actually apply what they learn.
+
+Do NOT invent new claims.
+
+If the existing project contains verified descriptions of the bonuses, use those descriptions. Otherwise keep descriptions concise and based only on the source material already available in the project.
+
+---
+
+## 2. BONUS PRESENTATION
+
+Do NOT use a conventional SaaS-style 3-column card grid.
+
+Instead, create an **editorial bonus stack**.
+
+Each bonus should feel like an individual item in a premium collection.
+
+Recommended desktop structure:
+
+* Large bonus number on the left
+* Bonus title and description in the center
+* Small visual/media indicator or authentic asset on the right
+* Thin horizontal divider between bonuses
+
+Example visual rhythm:
+
+01
+BONUS TITLE
+Short verified description                                  INCLUDED
+
+────────────────────────────────────────
+
+02
+BONUS TITLE
+Short verified description                                  INCLUDED
+
+────────────────────────────────────────
+
+03
+BONUS TITLE
+Short verified description                                  INCLUDED
+
+Continue for every **verified bonus currently contained in the project/source content**.
+
+Do not arbitrarily limit the number of bonuses if the existing offer contains more.
+
+---
+
+## 3. VISUAL HIERARCHY
+
+Make the bonus numbers oversized but restrained.
+
+For example:
+
+**01**
+
+should be much larger than the surrounding text, but remain thin/editorial rather than looking like a giant marketing graphic.
+
+Use:
+
+* Serif or refined display typography for the numbers
+* Sans-serif for labels/descriptions
+* Burgundy/wine as a restrained accent
+* Warm ivory background
+* Thin taupe/neutral dividers
+* Plenty of whitespace
+
+The section should feel closer to:
+
+**a luxury editorial catalogue**
+
+than:
+
+**an online-course sales funnel.**
+
+---
+
+## 4. AUTHENTIC CONTENT ONLY
+
+Before implementing the list:
+
+Inspect the existing project/source content for the actual bonuses.
+
+Use:
+
+* Existing bonus names
+* Existing descriptions
+* Existing images/covers
+* Existing downloadable assets
+* Existing supporting materials
+
+Do NOT invent:
+
+* Bonus titles
+* Bonus values
+* Dollar amounts
+* Page counts
+* Claimed outcomes
+* Testimonials
+* Credentials
+* “Worth $997” style valuations
+* Fake scarcity
+
+If an existing bonus has an authentic cover/image, use it subtly.
+
+If no authentic visual exists, do not fabricate a fake product cover. Use typography and layout instead.
+
+---
+
+## 5. OPTIONAL VALUE SIGNAL
+
+If the existing source content explicitly contains bonus values, you may present them.
+
+But do this very subtly.
+
+For example:
+
+BONUS 01
+[Title]
+
+Description...
+
+**Included with the F-Formula**
+
+If authentic dollar values exist and are clearly part of the current offer, they can appear as secondary information.
+
+Do NOT create exaggerated crossed-out pricing or aggressive “YOU GET $4,997 OF VALUE!” styling.
+
+---
+
+## 6. ONE FEATURED BONUS
+
+If there is one particularly important or substantial bonus in the verified offer, give it slightly more visual weight.
+
+For example:
+
+A large horizontal editorial composition:
+
+LEFT:
+BONUS 04
+
+CENTER:
+Large serif bonus title
+
+Below:
+Verified description
+
+RIGHT:
+Authentic bonus artwork / document preview if available
+
+This should feel like a magazine feature spread.
+
+Do not arbitrarily choose a “main bonus” if the source content does not make one clearly more substantial.
+
+---
+
+## 7. MICRO-INTERACTIONS
+
+Keep motion extremely subtle.
+
+On scroll:
+
+* Bonus rows may fade/translate upward by a few pixels
+* Numbers can gently transition into visibility
+* Images may have a very subtle scale effect
+
+No:
+
+* bouncing
+* spinning
+* flashy counters
+* aggressive parallax
+* confetti
+* animated “BONUS!” badges
+
+Respect `prefers-reduced-motion`.
+
+---
+
+## 8. MOBILE
+
+On mobile, the bonus stack should become:
+
+NUMBER
+BONUS TITLE
+DESCRIPTION
+optional visual
+
+with generous vertical spacing.
+
+Do not squeeze everything into a cramped row.
+
+The oversized number can sit above the title or align to the left edge of the content.
+
+Maintain the editorial rhythm.
+
+---
+
+## 9. TRANSITION AT THE END
+
+After the final bonus, create a quiet transition toward the commercial portion of the page.
+
+Something like:
+
+**Everything you need to understand the method.
+Everything you need to start applying it.**
+
+Then a subtle visual cue toward the next section.
+
+Do NOT introduce pricing yet.
+
+Do NOT introduce the guarantee yet.
+
+Do NOT add another large CTA here unless the existing conversion structure absolutely requires one.
+
+The next section will handle the actual offer/pricing.
+
+---
+
+## DESIGN RULES
+
+This section must NOT look like:
+
+* A SaaS pricing page
+* A course marketplace
+* A cheap ClickFunnels bonus stack
+* A grid of colorful cards
+* “BONUS!!!” internet-marketing graphics
+* Neon gradients
+* Giant red badges
+* Fake urgency
+* Fake value calculations
+
+It should look like:
+
+**A premium editorial presentation of additional resources belonging to an established relationship-education product.**
+
+Maintain the exact design system already established in Sections 1–6:
+
+* Warm ivory / cream
+* Charcoal / near-black typography
+* Deep burgundy/wine accent
+* Muted rose/taupe secondary tones
+* Editorial serif + modern sans typography
+* Thin rules
+* Large whitespace
+* Asymmetrical compositions
+* Restrained motion
+* Sophisticated imagery
+
+Make the section feel **expensive without trying to look expensive**.
+
+---
+
+## IMPLEMENTATION
+
+Reuse the existing design tokens, typography, navigation, spacing system, buttons, and animation utilities already created.
+
+Do not introduce another visual system.
+
+Ensure:
+
+* Responsive desktop/tablet/mobile layouts
+* Semantic HTML
+* Accessible contrast
+* Keyboard accessibility
+* Reduced-motion support
+* Optimized/lazy-loaded images
+* No layout shift from media
+* No horizontal overflow
+
+Build **ONLY Section 7**.
+
+Do not refactor previous sections.
+
+Do not build later sections.
+
+Stop when Section 7 is complete.

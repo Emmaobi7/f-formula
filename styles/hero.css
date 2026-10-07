@@ -1,0 +1,271 @@
+/* ==========================================================================
+   Hero Section Component
+   Editorial Spread × Asymmetric Composition × Controlled Depth
+   ========================================================================== */
+
+.hero-section {
+  position: relative;
+  padding-top: clamp(2.5rem, 2rem + 3vw, 5rem);
+  padding-bottom: clamp(4rem, 3rem + 5vw, 8rem);
+  overflow: hidden;
+}
+
+/* Subtle background accent glow (Warm Ivory / Wine undertone) */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: -10%;
+  right: -5%;
+  width: 55vw;
+  height: 55vw;
+  max-width: 750px;
+  max-height: 750px;
+  background: radial-gradient(circle, rgba(168, 124, 130, 0.08) 0%, rgba(88, 28, 38, 0.03) 45%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-grid {
+  position: relative;
+  z-index: var(--z-base);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(2.5rem, 2rem + 3vw, 4.5rem);
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .hero-grid {
+    grid-template-columns: 46% 54%;
+    gap: clamp(2rem, 1.5rem + 2vw, 4.5rem);
+    align-items: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-grid {
+    grid-template-columns: 44% 56%;
+  }
+}
+
+/* Primary Content Column */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Eyebrow */
+.hero-eyebrow-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: clamp(1rem, 0.8rem + 0.8vw, 1.6rem);
+}
+
+.hero-eyebrow-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.85rem;
+  background-color: var(--color-bg-subtle);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-full);
+}
+
+.eyebrow-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-accent-wine);
+  display: inline-block;
+}
+
+.hero-eyebrow {
+  font-family: var(--font-body);
+  font-size: var(--font-size-eyebrow);
+  font-weight: 600;
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+}
+
+/* Large Editorial Headline */
+.hero-title {
+  font-family: var(--font-display);
+  font-size: var(--font-size-h1);
+  font-weight: 400;
+  line-height: 1.06;
+  color: var(--color-text-primary);
+  letter-spacing: -0.022em;
+  margin-bottom: clamp(1.25rem, 1rem + 1vw, 2rem);
+  text-wrap: balance;
+}
+
+.hero-title .title-accent {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-accent-wine);
+}
+
+/* Supporting Copy */
+.hero-description {
+  font-size: var(--font-size-body-lg);
+  font-weight: 400;
+  line-height: 1.68;
+  color: var(--color-text-secondary);
+  max-width: 520px;
+  margin-bottom: clamp(1.75rem, 1.4rem + 1.2vw, 2.75rem);
+}
+
+/* CTA Group */
+.hero-actions {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+  margin-bottom: clamp(1.75rem, 1.4rem + 1vw, 2.5rem);
+}
+
+@media (min-width: 480px) {
+  .hero-actions {
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    gap: 1.25rem;
+  }
+}
+
+/* Primary Hero Button */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  background-color: var(--color-accent-wine);
+  color: var(--color-bg);
+  padding: 1rem 1.85rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border: 1px solid var(--color-accent-wine);
+  box-shadow: 0 4px 18px rgba(88, 28, 38, 0.15);
+  transition: background-color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent-wine-hover);
+  border-color: var(--color-accent-wine-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(88, 28, 38, 0.25);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-primary .btn-arrow {
+  transition: transform var(--transition-fast);
+}
+
+.btn-primary:hover .btn-arrow {
+  transform: translateX(3px);
+}
+
+/* Secondary Hero Interaction Button */
+.btn-secondary-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.95rem 1.4rem;
+  border-radius: var(--radius-sm);
+  background-color: transparent;
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-border-medium);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: background-color var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast), transform var(--transition-fast);
+}
+
+.btn-secondary-action:hover {
+  background-color: var(--color-bg-subtle);
+  border-color: var(--color-text-primary);
+  transform: translateY(-1px);
+}
+
+.btn-secondary-action .play-icon-mini {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: var(--color-accent-wine-subtle);
+  color: var(--color-accent-wine);
+  font-size: 0.65rem;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.btn-secondary-action:hover .play-icon-mini {
+  background-color: var(--color-accent-wine);
+  color: var(--color-bg);
+}
+
+/* Hero Metadata Line */
+.hero-metadata {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--color-border-subtle);
+  width: 100%;
+}
+
+.meta-item {
+  font-size: var(--font-size-meta);
+  font-weight: 500;
+  letter-spacing: var(--tracking-meta);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.meta-separator {
+  color: var(--color-accent-rose);
+  opacity: 0.6;
+  font-size: 0.85rem;
+  user-select: none;
+}
+
+/* Subtle Entrance Motion */
+.animate-reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: heroFadeUp 0.85s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.delay-1 { animation-delay: 0.08s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.32s; }
+.delay-4 { animation-delay: 0.44s; }
+.delay-5 { animation-delay: 0.56s; }
+
+@keyframes heroFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

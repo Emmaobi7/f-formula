@@ -1,0 +1,21 @@
+/**
+ * The Flirt Blueprint / F-Formula
+ * Main Stylesheet Aggregator
+ */
+
+@import './tokens.css';
+@import './base.css';
+@import './nav.css';
+@import './hero.css';
+@import './video.css';
+@import './shift.css';
+@import './framework.css';
+@import './founder.css';
+@import './testimonials.css';
+@import './product.css';
+@import './bonuses.css';
+@import './offer.css';
+@import './guarantee.css';
+@import './faq.css';
+@import './invitation.css';
+@import './footer.css';

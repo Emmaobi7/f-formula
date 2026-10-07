@@ -1,0 +1,344 @@
+Continue the redesign of The Flirt Blueprint / F-Formula website.
+
+The hero, Section 2 ("The Shift"), Section 3 ("The Framework"), Section 4 ("The Woman Behind the Method"), and Section 5 ("The Experience") are already implemented.
+
+DO NOT redesign or modify previous sections.
+
+Build ONLY SECTION 6 — INSIDE THE F-FORMULA.
+
+Do not build pricing, bonuses, FAQ, or footer yet.
+
+---
+
+SECTION PURPOSE
+
+This is the product reveal.
+
+The visitor has now:
+
+* understood the problem
+* seen the philosophy
+* encountered the framework
+* met the creator
+* seen real testimonials
+
+Now we show them exactly what they are getting.
+
+The section should answer:
+
+"What am I actually buying?"
+
+without feeling like a generic ecommerce product grid.
+
+The product should feel tangible, substantial, and carefully designed.
+
+---
+
+CONTENT RESEARCH
+
+Before implementing this section, inspect the existing project/content for the actual F-Formula product contents.
+
+Look for verified information regarding:
+
+* the main F-Formula guide
+* page count
+* video content
+* audio content
+* action guides
+* worksheets
+* exercises
+* modules
+* lessons
+* included resources
+
+Use only information that is actually present.
+
+DO NOT invent product components.
+
+DO NOT invent lesson titles.
+
+DO NOT invent page counts.
+
+DO NOT invent bonuses here.
+
+If information is unavailable, use a clearly marked placeholder rather than fabricated content.
+
+---
+
+SECTION HEADER
+
+Eyebrow:
+
+INSIDE THE F-FORMULA
+
+Headline direction:
+
+"Everything you need to understand the method."
+
+Or use stronger existing product copy if verified in the source material.
+
+Supporting copy:
+
+Keep it concise.
+
+The goal is anticipation, not a wall of sales copy.
+
+---
+
+PRIMARY PRODUCT PRESENTATION
+
+Do NOT use a conventional ecommerce card.
+
+Do NOT create:
+
+[IMAGE]
+[PRODUCT NAME]
+[$47]
+[BUY NOW]
+
+That comes later.
+
+Instead, create a premium editorial product presentation.
+
+---
+
+HERO PRODUCT VISUAL
+
+Create a large visual representation of the F-Formula guide.
+
+If an authentic PDF cover/product image exists in the project, use it.
+
+If it does not:
+
+Create a polished product mockup component using the available brand assets.
+
+Do NOT fabricate a fake book cover with invented claims.
+
+The mockup should feel physical and substantial.
+
+Possible presentation:
+
+A large upright guide/book mockup positioned against the warm background.
+
+Behind it, subtle secondary pages or content sheets may be visible.
+
+Do not create excessive 3D effects.
+
+Avoid cheesy ecommerce product renders.
+
+The product should look like an editorial publication.
+
+---
+
+CONTENT BREAKDOWN
+
+Beside or beneath the main product visual, create a structured list of what is included.
+
+Possible architecture:
+
+01
+THE GUIDE
+
+Short description.
+
+02
+VIDEO LESSONS
+
+Short description.
+
+03
+AUDIO CONTENT
+
+Short description.
+
+04
+ACTION GUIDES
+
+Short description.
+
+Only include categories that are actually confirmed by the source content.
+
+Each item should be editorial rather than a rounded SaaS card.
+
+Use:
+
+large number
+small label
+short description
+thin divider
+
+---
+
+DESIGN LANGUAGE
+
+Think:
+
+luxury magazine table of contents
+
+rather than:
+
+software feature comparison.
+
+Use generous whitespace.
+
+Use thin rules.
+
+Use strong typography.
+
+Use subtle burgundy accents.
+
+Avoid excessive boxes.
+
+---
+
+PRODUCT DETAILS
+
+If the actual product is confirmed to include:
+
+* 72+ page PDF
+* video lessons
+* MP3/audio lessons
+* action guides
+
+these can be presented as factual product components.
+
+Do not overstate what each component does.
+
+Do not invent outcomes.
+
+---
+
+VISUAL DETAIL
+
+Introduce subtle physicality:
+
+* paper texture if an authentic product asset supports it
+* subtle shadow
+* slight page layering
+* restrained grain
+* soft ambient lighting
+
+Do NOT use:
+
+* glossy plastic renders
+* floating neon effects
+* excessive reflections
+* giant drop shadows
+* fake gold foil everywhere
+
+The product should feel tactile and premium.
+
+---
+
+INTERACTION
+
+If appropriate:
+
+Desktop:
+Hovering over an included component can subtly emphasize it.
+
+Product mockup:
+Very subtle hover movement is acceptable.
+
+Do not create rotating 3D product models.
+
+Do not make the product spin.
+
+Do not create scroll-jacking.
+
+---
+
+PRODUCT PREVIEW
+
+If the actual guide/PDF pages are available in the project, consider showing 1–2 cropped preview pages beside the product.
+
+If they are not available, DO NOT fabricate them.
+
+Instead leave the architecture ready for authentic previews later.
+
+---
+
+MOBILE
+
+Mobile order:
+
+1. Section eyebrow
+2. Headline
+3. Product visual
+4. Product contents
+5. Small transition CTA
+
+The product mockup should remain visually prominent.
+
+Do not shrink it into a tiny thumbnail.
+
+---
+
+TRANSITION
+
+At the bottom, introduce:
+
+"There's more."
+
+Then, if the existing product genuinely includes bonuses, use a restrained transition link:
+
+"Explore the bonuses →"
+
+Do NOT list the bonuses yet.
+
+The next section will handle them.
+
+---
+
+MOTION
+
+Subtle only:
+
+* product reveal
+* image opacity/translate
+* staggered content list
+
+No spinning product.
+
+No dramatic 3D.
+
+No excessive parallax.
+
+---
+
+ACCESSIBILITY
+
+Use semantic headings.
+
+Ensure product information is readable without visual effects.
+
+Images require appropriate alt text.
+
+Interactive elements must have keyboard states.
+
+---
+
+IMPORTANT
+
+Build ONLY SECTION 6.
+
+Do not touch:
+
+* navigation
+* hero
+* Section 2
+* Section 3
+* Section 4
+* Section 5
+* bonuses
+* pricing
+* FAQ
+* footer
+
+After implementation, stop and report:
+
+* files changed
+* components created
+* verified product information used
+* product assets used
+* placeholders remaining

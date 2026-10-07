@@ -1,0 +1,315 @@
+/* ==========================================================================
+   Section 3 — The Framework Component
+   Editorial Progression × 3 Movements × Fine-Line Axis
+   ========================================================================== */
+
+.framework-section {
+  position: relative;
+  padding-top: clamp(4.5rem, 3.5rem + 5vw, 8.5rem);
+  padding-bottom: clamp(4.5rem, 3.5rem + 5vw, 8.5rem);
+  background-color: var(--color-bg-elevated);
+  border-top: 1px solid var(--color-border-subtle);
+  border-bottom: 1px solid var(--color-border-subtle);
+  overflow: hidden;
+}
+
+/* Subtle background illumination */
+.framework-section::before {
+  content: '';
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70vw;
+  height: 40vw;
+  max-width: 900px;
+  background: radial-gradient(ellipse, rgba(158, 116, 122, 0.04) 0%, rgba(88, 28, 38, 0.02) 50%, transparent 80%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ==========================================================================
+   Section Header
+   ========================================================================== */
+
+.framework-header {
+  position: relative;
+  z-index: var(--z-base);
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto clamp(3.5rem, 2.8rem + 3vw, 5.5rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.framework-eyebrow-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: clamp(0.9rem, 0.7rem + 0.5vw, 1.35rem);
+}
+
+.framework-eyebrow-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.85rem;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-full);
+}
+
+.framework-eyebrow {
+  font-family: var(--font-body);
+  font-size: var(--font-size-eyebrow);
+  font-weight: 600;
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+}
+
+.framework-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 1.8rem + 2vw, 3.65rem);
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--color-text-primary);
+  letter-spacing: -0.02em;
+  margin-bottom: clamp(1rem, 0.8rem + 0.6vw, 1.5rem);
+  text-wrap: balance;
+}
+
+.framework-subtitle {
+  font-size: var(--font-size-body-lg);
+  font-weight: 400;
+  line-height: 1.68;
+  color: var(--color-text-secondary);
+  text-wrap: pretty;
+}
+
+/* ==========================================================================
+   Framework Progression Track (Desktop Horizontal / Mobile Vertical)
+   ========================================================================== */
+
+.framework-progression-track {
+  position: relative;
+  z-index: var(--z-base);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  margin-bottom: clamp(3.5rem, 2.5rem + 3vw, 5rem);
+}
+
+@media (min-width: 900px) {
+  .framework-progression-track {
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(2rem, 1.2rem + 1.8vw, 3.75rem);
+    align-items: stretch;
+  }
+}
+
+/* Connecting Horizontal Axis Rule on Desktop */
+@media (min-width: 900px) {
+  .framework-progression-track::before {
+    content: '';
+    position: absolute;
+    top: 56px;
+    left: 10%;
+    right: 10%;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      var(--color-border-medium) 15%,
+      var(--color-border-medium) 85%,
+      transparent 100%
+    );
+    z-index: 0;
+  }
+}
+
+/* ==========================================================================
+   Individual Phase Component
+   ========================================================================== */
+
+.framework-phase-card {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  padding: clamp(1.75rem, 1.4rem + 1vw, 2.5rem) clamp(1.5rem, 1.2rem + 1vw, 2rem);
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  transition: border-color var(--transition-smooth), transform var(--transition-smooth), box-shadow var(--transition-smooth), opacity var(--transition-smooth);
+}
+
+/* Subtle editorial hover treatment on desktop */
+@media (hover: hover) {
+  .framework-progression-track:hover .framework-phase-card {
+    opacity: 0.65;
+  }
+
+  .framework-progression-track .framework-phase-card:hover,
+  .framework-progression-track .framework-phase-card:focus-within {
+    opacity: 1;
+    transform: translateY(-3px);
+    border-color: rgba(88, 28, 38, 0.35);
+    box-shadow: 0 12px 32px -8px rgba(24, 21, 20, 0.08);
+  }
+}
+
+/* Phase Header */
+.phase-header-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: clamp(1.25rem, 1rem + 0.6vw, 1.75rem);
+}
+
+/* Recurring Editorial Motif: Oversized Serif Numeral */
+.phase-numeral {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 2rem + 1.2vw, 3.5rem);
+  font-weight: 400;
+  line-height: 0.9;
+  color: var(--color-accent-rose);
+  letter-spacing: -0.03em;
+  transition: color var(--transition-fast);
+}
+
+.framework-phase-card:hover .phase-numeral {
+  color: var(--color-accent-wine);
+}
+
+.phase-pill-tag {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: var(--tracking-meta);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  padding: 0.25rem 0.65rem;
+  background-color: var(--color-bg-subtle);
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border-subtle);
+}
+
+/* Phase Titles & Typography */
+.phase-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 1.25rem + 0.4vw, 1.75rem);
+  font-weight: 500;
+  line-height: 1.22;
+  color: var(--color-text-primary);
+  letter-spacing: -0.015em;
+  margin-bottom: 0.85rem;
+  transition: color var(--transition-fast);
+}
+
+.framework-phase-card:hover .phase-title {
+  color: var(--color-accent-wine);
+}
+
+.phase-description {
+  font-size: var(--font-size-body-sm);
+  line-height: 1.68;
+  color: var(--color-text-secondary);
+  flex-grow: 1;
+}
+
+/* Phase Focus Micro-Note */
+.phase-focus-row {
+  margin-top: 1.5rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--color-border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.phase-focus-label {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: var(--tracking-meta);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.phase-focus-value {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+/* ==========================================================================
+   Product Connection Transition & Subtle CTA Link
+   ========================================================================== */
+
+.framework-footer {
+  position: relative;
+  z-index: var(--z-base);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.framework-footer-statement {
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 1.05rem + 0.4vw, 1.45rem);
+  font-style: italic;
+  color: var(--color-text-primary);
+}
+
+.framework-subtle-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent-wine);
+  padding: 0.5rem 0.25rem;
+  position: relative;
+  transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.framework-subtle-cta::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-accent-wine);
+  transition: transform var(--transition-fast);
+  transform-origin: left;
+}
+
+.framework-subtle-cta:hover {
+  color: var(--color-accent-wine-hover);
+  transform: translateX(3px);
+}
+
+.framework-subtle-cta:hover::after {
+  transform: scaleX(1.08);
+}
+
+/* ==========================================================================
+   Mobile Vertical Timeline Connector
+   ========================================================================== */
+
+@media (max-width: 899px) {
+  .framework-progression-track {
+    position: relative;
+    padding-left: 0;
+  }
+
+  .framework-phase-card {
+    position: relative;
+  }
+}

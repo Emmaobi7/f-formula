@@ -1,0 +1,290 @@
+Build **ONLY Section 10 — “Frequently Asked Questions”** of the redesigned Flirt Blueprint website.
+
+Do not modify Sections 1–9. Do not build the final CTA, footer, checkout, or any other section yet. Stop after completing this section.
+
+## PURPOSE
+
+Answer the final practical questions that could prevent someone from purchasing.
+
+This should be **clean, compact, and highly scannable**.
+
+The FAQ is NOT another sales pitch.
+
+The visitor should be able to quickly answer:
+
+* What exactly is the F-Formula?
+* What do I receive?
+* How does access work?
+* Who is it for?
+* How is it delivered?
+* What happens after purchase?
+* What is the guarantee?
+* Any other genuinely recurring questions found in the existing source.
+
+Only include questions supported by the existing website/project content.
+
+---
+
+# 1. CONTENT FIRST
+
+Inspect the existing project/source for the current FAQ and customer questions.
+
+Preserve the factual meaning of the existing answers.
+
+You may rewrite awkward legacy copy for clarity and consistency, but do NOT invent answers.
+
+Do not create claims about:
+
+* results
+* credentials
+* access
+* delivery
+* refunds
+* guarantees
+* product contents
+
+that are not supported by the source.
+
+If the existing FAQ contains outdated or duplicated questions, consolidate them.
+
+Aim for roughly **6–10 strong questions**, depending on the actual source content.
+
+Quality matters more than quantity.
+
+---
+
+# 2. DESIGN CONCEPT
+
+Do NOT use accordion cards with heavy borders and rounded corners.
+
+Use an **editorial accordion/list**.
+
+Desktop composition:
+
+LEFT:
+
+Small eyebrow:
+
+**QUESTIONS, ANSWERED**
+
+Large serif headline:
+
+**Before you begin.**
+
+Short supporting sentence.
+
+RIGHT:
+
+Vertical FAQ list.
+
+Each question should appear as a clean row:
+
+**What exactly is the F-Formula?**                         +
+
+────────────────────────────────────────
+
+**What do I receive when I purchase?**                    +
+
+────────────────────────────────────────
+
+**How will I access the material?**                       +
+
+────────────────────────────────────────
+
+etc.
+
+---
+
+# 3. ACCORDION BEHAVIOR
+
+Questions should expand/collapse.
+
+Use:
+
+* Plus icon when closed
+* Minus icon when open
+
+The icon should rotate or transition subtly.
+
+Opening an answer should animate with a restrained height/opacity transition.
+
+Do NOT use:
+
+* bouncing
+* dramatic scaling
+* flashy transitions
+
+Respect `prefers-reduced-motion`.
+
+---
+
+# 4. ANSWER TYPOGRAPHY
+
+When expanded:
+
+Question:
+
+* medium/semibold sans-serif
+
+Answer:
+
+* comfortable reading width
+* slightly smaller body typography
+* generous line height
+* charcoal/soft-black text
+
+Do not make answers tiny.
+
+The FAQ should remain extremely readable on mobile.
+
+---
+
+# 5. VISUAL STYLE
+
+Maintain the established:
+
+* warm ivory background
+* charcoal typography
+* deep burgundy accent
+* muted taupe dividers
+* editorial serif headings
+* modern sans body text
+* generous whitespace
+
+Use thin horizontal rules rather than cards.
+
+No shadows.
+
+No excessive rounded corners.
+
+No colorful FAQ boxes.
+
+---
+
+# 6. DEFAULT STATE
+
+On desktop:
+
+Keep the FAQ mostly collapsed.
+
+Optionally open the first question if that feels appropriate after testing.
+
+On mobile:
+
+Keep all questions collapsed initially.
+
+Do not automatically open multiple questions.
+
+---
+
+# 7. MOBILE
+
+On mobile, change to a single-column composition:
+
+EYEBROW
+HEADLINE
+SUPPORTING COPY
+
+FAQ LIST
+
+Each row should have enough vertical padding for comfortable tapping.
+
+Touch targets should be at least approximately 44px tall.
+
+Ensure:
+
+* no horizontal overflow
+* no clipped answer text
+* accessible focus states
+* keyboard navigation
+* screen-reader-friendly accordion semantics
+
+Use proper ARIA attributes such as:
+
+`aria-expanded`
+
+and appropriate button semantics.
+
+---
+
+# 8. FAQ CONTENT PRIORITY
+
+Prioritize questions that remove **purchase friction**.
+
+For example, if supported by the existing content:
+
+1. What is the F-Formula?
+2. What exactly do I get?
+3. How is the program delivered?
+4. Is this for beginners?
+5. How quickly can I access it?
+6. Is there a guarantee?
+7. What happens if I decide it isn't for me?
+
+But again:
+
+**Do not invent these answers.**
+
+Use the actual existing source to determine which questions belong.
+
+---
+
+# 9. END OF SECTION
+
+After the final FAQ item, create a very subtle transition into the final conversion section.
+
+Something like:
+
+**Still curious?**
+
+or another concise transition based on the existing copy.
+
+Do NOT add another large CTA here.
+
+The next section will be the final decision point.
+
+---
+
+# 10. PERFORMANCE & ACCESSIBILITY
+
+Implement the FAQ without unnecessary dependencies.
+
+Prefer the existing project's component system.
+
+Ensure:
+
+* semantic HTML
+* keyboard accessibility
+* visible focus state
+* correct ARIA state
+* no layout-breaking animation
+* reduced-motion support
+* mobile-friendly touch targets
+
+---
+
+## IMPORTANT DESIGN PRINCIPLE
+
+The FAQ should feel like the **quietest section on the page**.
+
+By this point the visitor has already seen:
+
+The problem →
+The shift →
+The framework →
+The founder →
+The proof →
+The product →
+The bonuses →
+The offer →
+The guarantee
+
+The FAQ simply removes the last bits of uncertainty.
+
+Do not turn it into another sales section.
+
+Reuse the exact design system from Sections 1–9.
+
+Build **ONLY Section 10**.
+
+Stop when complete.

@@ -1,0 +1,327 @@
+Continue the redesign of The Flirt Blueprint / F-Formula website.
+
+The hero, Section 2 ("The Shift"), Section 3 ("The Framework"), and Section 4 ("The Woman Behind the Method") are already implemented.
+
+DO NOT redesign or modify previous sections.
+
+Build ONLY SECTION 5 — THE EXPERIENCE.
+
+Do not build pricing, bonuses, FAQ, or footer yet.
+
+---
+
+SECTION PURPOSE
+
+This is the social-proof section.
+
+The visitor has now seen:
+
+* the problem
+* the philosophy
+* the framework
+* the person behind the method
+
+Now they need evidence that real people have found the material useful.
+
+The existing website contains testimonials.
+
+We are going to preserve the authenticity of those testimonials while completely modernizing their presentation.
+
+IMPORTANT:
+
+Do not invent testimonials.
+
+Do not rewrite testimonials in a way that changes their meaning.
+
+Do not invent names.
+
+Do not invent photos.
+
+Do not fabricate ratings.
+
+Do not manufacture statistics.
+
+Use only testimonial content that already exists in the project/source material.
+
+---
+
+SECTION HEADER
+
+Create a restrained editorial introduction.
+
+Eyebrow:
+
+THE EXPERIENCE
+
+Headline direction:
+
+"Different men. Different situations. The same shift in perspective."
+
+Use a stronger existing brand statement if one exists in the source content.
+
+Supporting copy should be short.
+
+The goal is to introduce the testimonials without making exaggerated claims.
+
+---
+
+TESTIMONIAL DESIGN
+
+DO NOT create a traditional 3-column testimonial grid.
+
+Avoid:
+
+[star rating]
+"AMAZING!"
+"John, USA"
+
+That would immediately make the brand feel like an ecommerce template.
+
+Instead create an editorial testimonial composition.
+
+Think:
+
+magazine quotes / interview excerpts / case-study fragments.
+
+---
+
+DESKTOP COMPOSITION
+
+Create a large featured testimonial.
+
+Example structure:
+
+LEFT:
+
+Large quotation mark or subtle typographic mark.
+
+Large testimonial quote.
+
+RIGHT:
+
+Name / attribution.
+
+Optional verified context if the existing source provides it.
+
+Then beneath/around it, introduce additional testimonials as smaller editorial excerpts.
+
+Possible arrangement:
+
+```
+              FEATURED QUOTE
+
+ ───────────────────────────────
+
+ "Actual testimonial text..."
+
+ — NAME
+
+ ───────────────
+
+ "Shorter quote..."      "Shorter quote..."
+```
+
+Do not force every testimonial into identical cards.
+
+Allow different quote lengths to create visual rhythm.
+
+---
+
+TESTIMONIALS AS CONTENT
+
+Build testimonials from structured data.
+
+Example:
+
+testimonials = [
+{
+quote,
+name,
+context,
+featured
+}
+]
+
+Do not hardcode every testimonial separately.
+
+This will make it easy to swap/reorder testimonials later.
+
+---
+
+DUPLICATION CLEANUP
+
+The existing website contains repeated testimonial content.
+
+DO NOT reproduce duplicate testimonials simply because they appear multiple times in the source page.
+
+Deduplicate the testimonial collection.
+
+Each unique testimonial should appear intentionally once unless there is a very strong design reason to reuse it.
+
+---
+
+PHOTOS
+
+If authentic testimonial photos exist in the project, they may be used.
+
+If no authentic photos exist:
+
+DO NOT add generic stock photos.
+
+Use typography and layout instead.
+
+This is preferable to fake-looking social proof.
+
+---
+
+VISUAL LANGUAGE
+
+Continue the established editorial aesthetic.
+
+Use:
+
+* warm ivory
+* charcoal
+* burgundy
+* restrained taupe
+* large serif quotations
+* thin rules
+* generous whitespace
+
+Use quotation marks as a visual device, but do not make them oversized decorative clutter.
+
+---
+
+NO STAR RATINGS
+
+Unless the existing testimonials genuinely contain ratings/reviews with ratings, do not add star ratings.
+
+Do not manufacture a review platform aesthetic.
+
+This is a personal-experience product, not a restaurant listing.
+
+---
+
+NO CAROUSEL BY DEFAULT
+
+Do not create an auto-rotating testimonial carousel.
+
+Static editorial presentation is preferred.
+
+If there are many testimonials, a restrained horizontal interaction may be used on desktop, but it must remain accessible and usable without JavaScript.
+
+Do not hide all proof behind a slider.
+
+---
+
+MICRO-INTERACTION
+
+Very subtle:
+
+* quote fade/reveal
+* slight image transition if photos are used
+* underline/link interaction
+
+No:
+
+* cards flying in
+* spinning
+* counters
+* star animations
+* auto-rotating quotes
+
+---
+
+TRUST DETAILS
+
+If existing source material contains legitimate contextual information such as:
+
+* profession
+* location
+* situation
+* length of use
+
+it may be displayed subtly.
+
+Do not invent context.
+
+Do not expose private information beyond what the original public testimonial contains.
+
+---
+
+SECTION TRANSITION
+
+End this section with a small editorial statement leading into the product:
+
+"Now see what's inside."
+
+Then a subtle text link:
+
+"Explore The F-Formula →"
+
+Do not introduce pricing here.
+
+Do not use a giant sales CTA yet.
+
+The next section will explain the actual product contents.
+
+---
+
+RESPONSIVE DESIGN
+
+Desktop:
+
+Feature one testimonial prominently.
+
+Use supporting testimonials around it.
+
+Mobile:
+
+Stack testimonials vertically.
+
+Featured testimonial first.
+
+Use clear separators.
+
+Do not put multiple tiny quotes side-by-side on mobile.
+
+Keep quotation text readable.
+
+---
+
+ACCESSIBILITY
+
+Use semantic blockquote elements.
+
+Associate attribution with each quote.
+
+Ensure sufficient contrast.
+
+Do not rely on quotation marks alone to communicate structure.
+
+---
+
+IMPORTANT
+
+Build ONLY SECTION 5.
+
+Do not touch:
+
+* navigation
+* hero
+* Section 2
+* Section 3
+* Section 4
+* pricing
+* bonuses
+* FAQ
+* footer
+
+After implementation, stop and report:
+
+* files changed
+* components created
+* testimonials used
+* duplicates removed
+* assets used
+* placeholders remaining

@@ -1,0 +1,143 @@
+/**
+ * The Flirt Blueprint / F-Formula Design Tokens
+ * Direction: Editorial Luxury × Modern Relationship Education × Sensual Confidence
+ */
+
+:root {
+  /* ==========================================================================
+     Color Palette
+     Restrained, warm, tactile palette: ivory, near-black charcoal, deep wine,
+     muted rose, and warm taupe.
+     ========================================================================== */
+  
+  /* Canvas & Surfaces */
+  --color-bg: #FAF7F2;               /* Warm ivory / soft cream */
+  --color-bg-subtle: #F3EFE8;        /* Warm linen secondary background */
+  --color-bg-card: #FFFFFF;          /* Clean surface card */
+  --color-bg-elevated: #FCFAF7;      /* Subtle elevated surface */
+  --color-bg-overlay: rgba(20, 17, 16, 0.76); /* Dark cinematic modal backdrop */
+
+  /* Typography / Text */
+  --color-text-primary: #181514;     /* Near-black charcoal with warm undertone */
+  --color-text-secondary: #524B46;   /* Refined charcoal-taupe */
+  --color-text-muted: #847B74;       /* Warm muted taupe */
+  --color-text-subtle: #A39B94;      /* Soft metadata taupe */
+  --color-text-on-dark: #FAF7F2;     /* Warm cream for dark contexts */
+
+  /* Accents */
+  --color-accent-wine: #581C26;        /* Deep burgundy / wine - Primary brand accent */
+  --color-accent-wine-hover: #43141C;  /* Darker wine for active/hover */
+  --color-accent-wine-subtle: rgba(88, 28, 38, 0.07); /* Muted wine tint */
+  --color-accent-wine-glow: rgba(88, 28, 38, 0.18);
+  
+  --color-accent-rose: #9E747A;        /* Muted rose / dusty mauve - Secondary accent */
+  --color-accent-rose-subtle: rgba(158, 116, 122, 0.12);
+  --color-accent-gold-taupe: #B39B82;  /* Subtle metallic taupe highlight */
+
+  /* Borders & Dividers */
+  --color-border-subtle: #E8E2D8;      /* Restrained warm 1px border */
+  --color-border-medium: #D8D0C4;      /* Interactive border */
+  --color-border-emphasis: #B8ADA0;    /* Focus & contrast border */
+  --color-border-wine: rgba(88, 28, 38, 0.2);
+
+  /* Functional / Interactive */
+  --color-focus: #581C26;
+  --color-focus-ring: rgba(88, 28, 38, 0.35);
+
+  /* ==========================================================================
+     Typography System
+     Display: Cormorant Garamond / Instrument Serif
+     UI & Body: Plus Jakarta Sans / Manrope
+     ========================================================================== */
+  
+  --font-display: 'Cormorant Garamond', 'Instrument Serif', Georgia, 'Times New Roman', serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Fluid Type Scale */
+  --font-size-eyebrow: clamp(0.72rem, 0.68rem + 0.2vw, 0.8125rem);
+  --font-size-meta: clamp(0.75rem, 0.72rem + 0.15vw, 0.84rem);
+  --font-size-body-sm: 0.875rem;
+  --font-size-body: clamp(1rem, 0.96rem + 0.2vw, 1.0625rem);
+  --font-size-body-lg: clamp(1.0625rem, 1rem + 0.3vw, 1.1875rem);
+  --font-size-h3: clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);
+  --font-size-h2: clamp(1.85rem, 1.5rem + 1.4vw, 2.75rem);
+  --font-size-h1: clamp(2.5rem, 1.8rem + 2.8vw, 4.35rem);
+
+  /* Letter Spacing (Tracking) */
+  --tracking-tighter: -0.025em;
+  --tracking-tight: -0.015em;
+  --tracking-normal: 0em;
+  --tracking-wide: 0.04em;
+  --tracking-wider: 0.08em;
+  --tracking-eyebrow: 0.18em;
+  --tracking-meta: 0.12em;
+
+  /* Line Heights */
+  --leading-none: 1;
+  --leading-tight: 1.08;
+  --leading-snug: 1.25;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.7;
+
+  /* ==========================================================================
+     Spatial Scale & Layout
+     ========================================================================== */
+  
+  --space-2xs: 0.25rem;   /* 4px */
+  --space-xs: 0.5rem;     /* 8px */
+  --space-sm: 0.75rem;    /* 12px */
+  --space-md: 1rem;       /* 16px */
+  --space-lg: 1.5rem;     /* 24px */
+  --space-xl: 2rem;       /* 32px */
+  --space-2xl: 3rem;      /* 48px */
+  --space-3xl: 4.5rem;    /* 72px */
+  --space-4xl: 6rem;      /* 96px */
+  --space-5xl: 8rem;      /* 128px */
+
+  /* Containers */
+  --container-max: 1360px;
+  --container-narrow: 1040px;
+  --container-padding: clamp(1.25rem, 0.8rem + 2vw, 3rem);
+
+  /* ==========================================================================
+     Border Radii
+     Restrained, soft editorial elegance (12px-16px for media, subtle for UI)
+     ========================================================================== */
+  
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-video: 14px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+
+  /* ==========================================================================
+     Shadows (Soft, diffused, atmospheric)
+     ========================================================================== */
+  
+  --shadow-subtle: 0 2px 8px rgba(24, 21, 20, 0.03);
+  --shadow-card: 0 8px 24px -6px rgba(24, 21, 20, 0.05);
+  --shadow-cinematic: 0 20px 48px -12px rgba(24, 21, 20, 0.12), 0 8px 18px -6px rgba(24, 21, 20, 0.05);
+  --shadow-modal: 0 28px 72px -16px rgba(18, 14, 13, 0.35);
+
+  /* ==========================================================================
+     Transitions & Motion
+     ========================================================================== */
+  
+  --transition-fast: 160ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-base: 280ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 450ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-cinematic: 700ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Z-Index Hierarchy */
+  --z-base: 1;
+  --z-sticky: 100;
+  --z-header: 500;
+  --z-modal: 1000;
+}

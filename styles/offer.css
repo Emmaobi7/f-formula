@@ -1,0 +1,312 @@
+/* ==========================================================================
+   Section 8 — The Offer (Pricing & Commercial Decision)
+   Editorial Purchase Spread × High-Trust Contrast Card × Frictionless Purchase
+   ========================================================================== */
+
+.offer-section {
+  position: relative;
+  padding-top: clamp(4.5rem, 3.5rem + 5vw, 8.5rem);
+  padding-bottom: clamp(4.5rem, 3.5rem + 5vw, 8.5rem);
+  background-color: var(--color-bg);
+  border-top: 1px solid var(--color-border-subtle);
+  overflow: hidden;
+}
+
+/* Background Atmosphere */
+.offer-section::before {
+  content: '';
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 75vw;
+  height: 50vw;
+  max-width: 950px;
+  background: radial-gradient(ellipse, rgba(88, 28, 38, 0.04) 0%, rgba(168, 124, 130, 0.02) 50%, transparent 80%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ==========================================================================
+   Section Header
+   ========================================================================== */
+
+.offer-header {
+  position: relative;
+  z-index: var(--z-base);
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto clamp(3.5rem, 2.5rem + 3vw, 5.5rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.offer-eyebrow-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: clamp(0.9rem, 0.7rem + 0.5vw, 1.35rem);
+}
+
+.offer-eyebrow-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.85rem;
+  background-color: var(--color-bg-subtle);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-full);
+}
+
+.offer-eyebrow {
+  font-family: var(--font-body);
+  font-size: var(--font-size-eyebrow);
+  font-weight: 600;
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+}
+
+.offer-headline {
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 1.8rem + 2vw, 3.65rem);
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--color-text-primary);
+  letter-spacing: -0.02em;
+  margin-bottom: clamp(1rem, 0.8rem + 0.6vw, 1.5rem);
+  text-wrap: balance;
+}
+
+.offer-subtitle {
+  font-size: var(--font-size-body-lg);
+  font-weight: 400;
+  line-height: 1.68;
+  color: var(--color-text-secondary);
+  text-wrap: pretty;
+}
+
+/* ==========================================================================
+   Editorial Offer Container (Dark Luxury Charcoal Surface)
+   ========================================================================== */
+
+.offer-container-card {
+  position: relative;
+  z-index: var(--z-base);
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: #181514;
+  color: #FAF7F2;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 24px 60px -15px rgba(24, 21, 20, 0.25), 0 10px 24px -10px rgba(88, 28, 38, 0.12);
+  padding: clamp(2.25rem, 1.8rem + 2vw, 4.5rem);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(2.5rem, 2rem + 2vw, 4.5rem);
+  align-items: center;
+}
+
+@media (min-width: 960px) {
+  .offer-container-card {
+    grid-template-columns: 55% 45%;
+    gap: clamp(2.5rem, 2rem + 2.5vw, 4.5rem);
+  }
+}
+
+/* ==========================================================================
+   Left Column: Package Overview & Inventory Checklist
+   ========================================================================== */
+
+.offer-inventory-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.offer-program-tag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: var(--tracking-meta);
+  text-transform: uppercase;
+  color: var(--color-accent-rose);
+  margin-bottom: 0.65rem;
+}
+
+.offer-program-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 1.65rem + 1.2vw, 2.75rem);
+  font-weight: 400;
+  line-height: 1.15;
+  color: #FAF7F2;
+  letter-spacing: -0.015em;
+  margin-bottom: 1rem;
+}
+
+.offer-program-summary {
+  font-size: 0.9375rem;
+  line-height: 1.68;
+  color: rgba(250, 247, 242, 0.78);
+  margin-bottom: clamp(1.5rem, 1.2rem + 0.8vw, 2.25rem);
+}
+
+.offer-checklist {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.offer-check-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: rgba(250, 247, 242, 0.9);
+}
+
+.check-numeral {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-accent-rose);
+  flex-shrink: 0;
+}
+
+.check-text strong {
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   Right Column: Decision Box, Price, CTA & Trust Anchors
+   ========================================================================== */
+
+.offer-decision-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md);
+  padding: clamp(2rem, 1.6rem + 1.2vw, 3rem) clamp(1.5rem, 1.2rem + 1vw, 2.5rem);
+}
+
+.price-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: var(--tracking-meta);
+  text-transform: uppercase;
+  color: rgba(250, 247, 242, 0.65);
+  margin-bottom: 0.5rem;
+}
+
+.price-display-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.price-currency {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 1.75rem + 0.8vw, 2.75rem);
+  font-weight: 400;
+  color: #FAF7F2;
+}
+
+.price-amount {
+  font-family: var(--font-display);
+  font-size: clamp(3.5rem, 2.8rem + 2vw, 5rem);
+  font-weight: 400;
+  line-height: 0.9;
+  color: #FAF7F2;
+  letter-spacing: -0.03em;
+}
+
+.price-term {
+  font-size: 0.8125rem;
+  color: rgba(250, 247, 242, 0.7);
+  letter-spacing: 0.04em;
+  margin-bottom: clamp(1.5rem, 1.2rem + 0.8vw, 2.25rem);
+}
+
+/* Strongest Purchase CTA */
+.btn-offer-purchase {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  width: 100%;
+  background-color: var(--color-accent-wine);
+  color: #FAF7F2;
+  padding: 1.15rem 2rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 24px rgba(88, 28, 38, 0.4);
+  transition: background-color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
+  cursor: pointer;
+}
+
+.btn-offer-purchase:hover {
+  background-color: #6d2330;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(88, 28, 38, 0.55);
+}
+
+.btn-offer-purchase:active {
+  transform: translateY(0);
+}
+
+.btn-offer-purchase .purchase-arrow {
+  transition: transform var(--transition-fast);
+}
+
+.btn-offer-purchase:hover .purchase-arrow {
+  transform: translateX(4px);
+}
+
+/* Reassurance Note */
+.offer-reassurance-note {
+  font-size: 0.78125rem;
+  line-height: 1.5;
+  color: rgba(250, 247, 242, 0.65);
+  margin-top: 1.15rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Confidence Anchors */
+.offer-confidence-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+}
+
+.confidence-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.71875rem;
+  font-weight: 600;
+  letter-spacing: var(--tracking-meta);
+  text-transform: uppercase;
+  color: rgba(250, 247, 242, 0.85);
+}
+
+.confidence-icon {
+  font-size: 0.75rem;
+  color: var(--color-accent-rose);
+}

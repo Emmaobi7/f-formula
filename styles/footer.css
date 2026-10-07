@@ -1,0 +1,178 @@
+/* ==========================================================================
+   Section 12 — Site Footer Component
+   Editorial Magazine Colophon × Structured Landmarks × Quiet Elegance
+   ========================================================================== */
+
+.site-footer {
+  position: relative;
+  background-color: #130F10;
+  color: #FAF7F2;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: clamp(4.5rem, 3.5rem + 4vw, 7rem);
+  padding-bottom: clamp(2.5rem, 2rem + 2vw, 4rem);
+  overflow: hidden;
+}
+
+.footer-container {
+  position: relative;
+  z-index: var(--z-base);
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}
+
+/* ==========================================================================
+   Upper Footer Area (Brand Lockup & Navigation Groups)
+   ========================================================================== */
+
+.footer-upper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(2.5rem, 2rem + 2vw, 4.5rem);
+  margin-bottom: clamp(3rem, 2.5rem + 2vw, 5rem);
+}
+
+@media (min-width: 900px) {
+  .footer-upper {
+    grid-template-columns: 45% 55%;
+    align-items: flex-start;
+  }
+}
+
+/* Left: Brand Identity & Statement */
+.footer-brand-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 440px;
+}
+
+.footer-brand-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 1.25rem;
+  text-decoration: none;
+}
+
+.footer-brand-monogram {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: var(--radius-xs);
+  background-color: var(--color-accent-wine);
+  color: #FAF7F2;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.footer-brand-name {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #FAF7F2;
+  transition: color var(--transition-fast);
+}
+
+.footer-brand-link:hover .footer-brand-name {
+  color: var(--color-accent-rose);
+}
+
+.footer-brand-statement {
+  font-size: 0.875rem;
+  line-height: 1.7;
+  color: rgba(250, 247, 242, 0.7);
+}
+
+/* Right: Navigation Column Groups */
+.footer-nav-groups {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(2rem, 1.5rem + 1vw, 3.5rem);
+}
+
+@media (min-width: 600px) {
+  .footer-nav-groups {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: flex-end;
+  }
+}
+
+.footer-nav-group-title {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: var(--tracking-meta);
+  text-transform: uppercase;
+  color: var(--color-accent-rose);
+  margin-bottom: 1.15rem;
+}
+
+.footer-links-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer-link {
+  font-size: 0.875rem;
+  color: rgba(250, 247, 242, 0.75);
+  transition: color var(--transition-fast), transform var(--transition-fast);
+  display: inline-block;
+}
+
+.footer-link:hover {
+  color: #FFFFFF;
+  transform: translateX(2px);
+}
+
+/* ==========================================================================
+   Lower Footer Area (Divider, Copyright & Legal Notice)
+   ========================================================================== */
+
+.footer-lower {
+  padding-top: clamp(1.5rem, 1.2rem + 1vw, 2.25rem);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .footer-lower {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+.footer-copyright {
+  font-size: 0.75rem;
+  letter-spacing: var(--tracking-wide);
+  color: rgba(250, 247, 242, 0.55);
+}
+
+.footer-legal-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.footer-legal-link {
+  font-size: 0.75rem;
+  color: rgba(250, 247, 242, 0.55);
+  transition: color var(--transition-fast);
+}
+
+.footer-legal-link:hover {
+  color: rgba(250, 247, 242, 0.85);
+}

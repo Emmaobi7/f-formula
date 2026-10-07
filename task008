@@ -1,0 +1,382 @@
+Build **ONLY Section 8 — “The Offer” / Pricing Reveal** of the redesigned Flirt Blueprint website.
+
+Do not modify Sections 1–7. Do not build the guarantee, FAQ, final CTA, or footer yet. Stop after completing this section.
+
+## PURPOSE
+
+This is the moment where the page transitions from:
+
+**“I understand the problem.”**
+
+to:
+
+**“I understand the product, I understand what I get, and I can buy it.”**
+
+The existing website is a long-form direct-response funnel, so pricing is already an important conversion moment.
+
+The redesign should NOT hide the commercial intent.
+
+Instead, make the purchase decision feel:
+
+* clear
+* confident
+* premium
+* trustworthy
+* frictionless
+
+without reverting to old-school aggressive sales-funnel aesthetics.
+
+---
+
+# 1. SECTION TRANSITION
+
+Create a strong visual transition from the bonus section.
+
+Use a small eyebrow such as:
+
+**THE COMPLETE EXPERIENCE**
+
+Then an editorial serif headline.
+
+Possible direction:
+
+**Everything comes together here.**
+
+Supporting copy should briefly reinforce what the customer receives.
+
+Do not repeat the entire sales pitch.
+
+The visitor already understands:
+
+* the problem
+* the philosophy
+* the F-Formula
+* the founder
+* the results/social proof
+* the product
+* the bonuses
+
+This section should synthesize those things rather than restart the page.
+
+---
+
+# 2. OFFER COMPOSITION
+
+Do NOT create a generic SaaS pricing card.
+
+Instead, create a **premium editorial offer composition**.
+
+Desktop:
+
+LEFT / PRIMARY AREA:
+Large product title and concise description.
+
+RIGHT / PRIMARY AREA:
+The actual purchase decision.
+
+For example:
+
+THE F-FORMULA
+
+[Short verified description]
+
+What's included:
+✓ Core F-Formula materials
+✓ Verified product resources
+✓ Verified bonuses
+✓ Verified access terms
+
+Then:
+
+**$XX**
+
+[GET THE F-FORMULA]
+
+Use the **actual current price found in the existing project/source**.
+
+Do NOT assume the old $47 price is still correct if the project contains different pricing.
+
+Do not invent pricing.
+
+---
+
+# 3. PRICE PRESENTATION
+
+The price should be visually important but elegant.
+
+Do NOT use:
+
+* giant red price graphics
+* flashing discounts
+* fake crossed-out prices
+* countdown timers
+* “ACT NOW”
+* “ONLY 3 LEFT”
+* fake scarcity
+* spinning price animations
+
+Instead:
+
+Use large refined typography.
+
+For example:
+
+**$47**
+
+with a small supporting line such as:
+
+**One-time purchase**
+
+ONLY if that is verified by the existing offer.
+
+If the current offer has payment details such as lifetime access, use them only if verified.
+
+---
+
+# 4. PRIMARY CTA
+
+Create the strongest CTA button on the page so far.
+
+Example direction:
+
+**GET THE F-FORMULA**
+
+or use the existing verified purchase CTA language if one already exists.
+
+The button should feel substantial without looking like a giant marketing banner.
+
+Use the existing burgundy/wine accent.
+
+Interaction:
+
+* subtle hover transition
+* slight elevation
+* no bouncing
+* no glow
+* no pulsing
+* keyboard focus state
+
+The entire button must be accessible.
+
+---
+
+# 5. PURCHASE CONFIDENCE
+
+Directly beneath the CTA, create a compact confidence row.
+
+Only use information that is verified in the existing source.
+
+Possible examples if verified:
+
+**Secure checkout**
+**Instant access**
+**60-day guarantee**
+**Lifetime access**
+
+Do NOT automatically include all of these.
+
+Inspect the existing product/checkout content and only display claims that actually exist.
+
+Use small typography and restrained icons if needed.
+
+No excessive badges.
+
+---
+
+# 6. WHAT YOU RECEIVE
+
+Below the primary price area, create a concise editorial summary of what the purchase unlocks.
+
+Instead of cards, use a compact list.
+
+Example structure:
+
+**YOUR COMPLETE F-FORMULA**
+
+01 — Core program
+02 — Supporting resources
+03 — Audio/video materials
+04 — Action guides
+05 — Bonuses
+
+Only use verified contents.
+
+This should function as a final mental checklist before purchase.
+
+Do not repeat every description from Section 6.
+
+---
+
+# 7. VALUE WITHOUT HYPE
+
+If the existing offer contains legitimate value framing, preserve it carefully.
+
+For example, if the original source explicitly states that the customer receives multiple specific resources, make the breadth of the offer visually obvious.
+
+But do NOT invent a total monetary value.
+
+Do NOT write:
+
+“$3,997 VALUE”
+
+unless that exact claim exists in the source.
+
+The design itself should communicate value through **clarity and completeness**, not exaggerated numbers.
+
+---
+
+# 8. RESPONSIVE DESIGN
+
+Desktop:
+
+Use a balanced two-column composition with plenty of whitespace.
+
+Mobile:
+
+Stack in this order:
+
+1. Eyebrow
+2. Headline
+3. Short explanation
+4. Product contents
+5. Price
+6. CTA
+7. Confidence indicators
+
+The CTA should remain highly visible without becoming sticky or intrusive.
+
+Ensure no horizontal scrolling.
+
+---
+
+# 9. VISUAL TREATMENT
+
+This section can have a slightly stronger burgundy presence than previous sections because this is the conversion point.
+
+But keep it sophisticated.
+
+Possible treatment:
+
+Warm cream background → subtle burgundy panel/field → ivory typography.
+
+OR:
+
+Cream background → dark charcoal offer block → burgundy CTA.
+
+Choose whichever integrates best with the existing design system.
+
+Do NOT introduce gradients.
+
+Do NOT make the whole section look like a checkout page.
+
+It should still feel like part of the editorial website.
+
+---
+
+# 10. SUBTLE REASSURANCE
+
+Near the purchase CTA, include a small line that reduces hesitation.
+
+Only if supported by existing content.
+
+Examples:
+
+**A practical framework for navigating attraction, conversation, and connection.**
+
+or a verified access/guarantee statement.
+
+Avoid manipulative language.
+
+The visitor should feel:
+
+> “I know what this is.
+> I know what I'm getting.
+> I know what it costs.
+> I can make the decision.”
+
+That is the goal.
+
+---
+
+# 11. MOTION
+
+Keep animation minimal.
+
+On entering viewport:
+
+* Offer content fades in
+* Price enters subtly
+* CTA transitions into place
+
+Hover:
+
+* button responds subtly
+* no excessive scaling
+
+Respect `prefers-reduced-motion`.
+
+No auto-playing media.
+
+---
+
+# 12. CONTENT SAFETY / ACCURACY
+
+Inspect the existing project/source before writing the section.
+
+Use only verified:
+
+* product name
+* pricing
+* access terms
+* checkout destination
+* guarantee language
+* included materials
+* payment terms
+
+Do not invent any commercial claim.
+
+If a value is uncertain, omit it rather than guessing.
+
+---
+
+# IMPORTANT DESIGN PRINCIPLE
+
+This is **not** supposed to look like a redesigned ClickFunnels checkout block.
+
+It should feel like the natural commercial conclusion of a sophisticated editorial experience.
+
+The visitor has spent the entire page becoming more informed and more interested.
+
+Now the website simply says:
+
+**Here is the complete thing.
+Here is what it costs.
+Here is how you get it.**
+
+Confident. Quiet. Clear.
+
+---
+
+## IMPLEMENTATION
+
+Reuse the exact design system already established in Sections 1–7.
+
+Do not introduce new fonts.
+
+Do not introduce a new color system.
+
+Do not refactor previous sections.
+
+Do not build:
+
+* guarantee section
+* FAQ
+* final CTA
+* footer
+* checkout implementation
+
+Those come later.
+
+Build **ONLY Section 8**.
+
+Stop when the section is complete.

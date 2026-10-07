@@ -1,0 +1,212 @@
+Continue the redesign of The Flirt Blueprint / F-Formula website.
+
+The navigation and hero have already been implemented.
+
+DO NOT modify the existing navigation or hero unless a change is absolutely necessary for this section to integrate correctly.
+
+Build ONLY the next section immediately following the hero.
+
+Do not continue further down the page.
+
+SECTION 2 — THE SHIFT
+
+PURPOSE
+
+The visitor has just encountered the hero.
+
+Now we need to create the intellectual shift behind the product:
+
+The problem is not that people don't know enough "lines."
+
+The problem is that successful flirting requires understanding the interaction itself — timing, confidence, reading the other person's response, creating chemistry, and knowing what to do next.
+
+This section should make the visitor think:
+
+"Okay. Maybe I've been approaching this the wrong way."
+
+Do NOT make medical, psychological, biological, or scientific claims unless they already exist in the provided source content.
+
+Do not invent statistics.
+
+Do not claim guaranteed attraction.
+
+Do not claim that a specific technique works on every woman.
+
+COPY DIRECTION
+
+Use a restrained editorial headline such as:
+
+"Stop searching for the perfect line."
+
+Follow with a secondary statement along the lines of:
+
+"Great conversations aren't scripted. They're navigated."
+
+Then a concise paragraph explaining the core problem.
+
+The writing should feel intelligent and confident.
+
+Avoid:
+
+* pickup-artist terminology
+* misogynistic language
+* "hack women"
+* manipulation language
+* "make her obsessed"
+* "make women do X"
+* exaggerated promises
+
+The tone should communicate confidence without treating attraction as a mechanical formula for controlling another person.
+
+VISUAL CONCEPT
+
+Do NOT create a conventional three-card feature section.
+
+No:
+[icon]
+[heading]
+[paragraph]
+
+Instead create an editorial composition.
+
+Use a large typographic statement on one side and a carefully art-directed visual treatment on the other.
+
+Possible structure:
+
+LEFT:
+
+Small eyebrow:
+
+THE SHIFT
+
+Large editorial statement:
+
+"Chemistry isn't a script."
+
+Then a short explanatory paragraph.
+
+RIGHT:
+
+A visual composition representing conversation and connection.
+
+Use one strong image/visual rather than a collage.
+
+The image should communicate:
+
+* eye contact
+* conversation
+* proximity
+* confidence
+* subtle chemistry
+
+It must remain tasteful.
+
+No explicit sexual imagery.
+
+No lingerie.
+
+No nudity.
+
+No stereotypical "seduction" stock photography.
+
+The sensuality should come from atmosphere, expression, composition, and proximity.
+
+If the project already contains suitable image assets, use them.
+
+If appropriate assets do not exist, create a clean visual placeholder component with a clear asset location so the final photography can be swapped in later.
+
+Do not download random stock images.
+
+LAYOUT
+
+Use an asymmetrical editorial grid.
+
+Suggested proportions:
+
+Text:
+~40%
+
+Visual:
+~60%
+
+Allow the visual to extend slightly beyond the normal content grid.
+
+Use generous whitespace.
+
+The section should feel like a continuation of the hero rather than a boxed-off website section.
+
+Add a subtle transition from the hero's background into this section.
+
+TYPOGRAPHY
+
+Continue the established design system.
+
+The headline should use the display serif.
+
+Body/UI should use the established sans-serif.
+
+Do not introduce another font.
+
+Create strong hierarchy through scale and whitespace rather than excessive decoration.
+
+INTERACTION
+
+Keep interaction extremely subtle.
+
+Possible:
+
+* image reveal on scroll
+* slight opacity/translate entrance
+* subtle image scale from 1.02 → 1
+* restrained hover treatment
+
+No dramatic animation.
+
+No parallax gimmicks.
+
+No floating objects.
+
+No animated text effects.
+
+MOBILE
+
+On mobile:
+
+1. eyebrow
+2. headline
+3. paragraph
+4. visual
+
+The visual should remain prominent.
+
+Do not reduce the image to a tiny thumbnail.
+
+Maintain generous vertical spacing.
+
+QUALITY BAR
+
+This section should feel like an editorial feature in a premium magazine, not a marketing template.
+
+It should communicate:
+
+"You've been taught to look for lines. We're teaching you to understand the interaction."
+
+But do not use that exact sentence unless it fits naturally with the existing copy.
+
+IMPORTANT
+
+Build ONLY Section 2.
+
+Do not create:
+
+* testimonials
+* pricing
+* FAQ
+* bonuses
+* footer
+* additional CTAs
+* additional product sections
+
+Keep the implementation clean and modular.
+
+After implementation, stop and report the files/components changed.

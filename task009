@@ -1,0 +1,201 @@
+Build **ONLY Section 9 — “The Guarantee”** of the redesigned Flirt Blueprint website.
+
+Do not modify Sections 1–8. Do not build the FAQ, final CTA, or footer yet. Stop after completing this section.
+
+## PURPOSE
+
+This section should remove the final major purchase objection:
+
+**“What if this isn't right for me?”**
+
+The existing offer includes a guarantee. Present it with confidence and restraint.
+
+This should be a **short, elegant reassurance section**, not another giant sales section.
+
+---
+
+# 1. CONTENT
+
+First inspect the existing project/source and use the **exact verified guarantee terms**.
+
+If the existing offer contains a 60-day guarantee, use the verified 60-day language.
+
+Do NOT invent:
+
+* guarantee duration
+* refund conditions
+* refund process
+* eligibility requirements
+* promises about results
+
+Do not rewrite the legal meaning of the guarantee.
+
+You may improve the presentation and hierarchy while preserving the actual meaning.
+
+---
+
+# 2. VISUAL CONCEPT
+
+Create a calm editorial section with substantial whitespace.
+
+Suggested structure:
+
+Small eyebrow:
+
+**YOUR PURCHASE IS PROTECTED**
+
+Large serif headline:
+
+**Try the F-Formula with confidence.**
+
+Then a concise explanation using the verified guarantee language.
+
+At the bottom:
+
+**[Guarantee duration]**
+
+**GUARANTEE**
+
+as a restrained typographic lockup.
+
+For example, if the verified source says 60 days:
+
+**60 DAYS**
+**GUARANTEE**
+
+Make this feel like a premium editorial seal, NOT a giant ecommerce badge.
+
+---
+
+# 3. LAYOUT
+
+Desktop:
+
+Use an asymmetric composition.
+
+LEFT:
+Large serif headline and supporting copy.
+
+RIGHT:
+Large typographic guarantee statement.
+
+A thin vertical rule can separate the two areas.
+
+Mobile:
+
+Stack naturally:
+
+Headline
+Guarantee explanation
+Large guarantee duration
+
+Keep plenty of breathing room.
+
+---
+
+# 4. COLOR
+
+Use the established palette.
+
+Possible treatment:
+
+Warm ivory background.
+
+Dark charcoal text.
+
+Deep burgundy accent for the guarantee duration.
+
+No gradients.
+
+No bright green “money-back guarantee” graphics.
+
+No gold badge.
+
+No shield icons unless an existing brand asset specifically uses one.
+
+---
+
+# 5. TRUST WITHOUT HYPE
+
+The section should communicate:
+
+**You don't have to make this decision under pressure.**
+
+But don't literally add manipulative sales copy unless it exists in the source.
+
+The guarantee itself should do the work.
+
+Avoid:
+
+* “ZERO RISK!!!”
+* “YOU HAVE NOTHING TO LOSE!”
+* “ACT NOW!”
+* “BUY BEFORE MIDNIGHT!”
+
+This brand should feel confident enough not to shout.
+
+---
+
+# 6. CTA
+
+Do NOT create another giant CTA.
+
+At most, include a small text transition toward the FAQ:
+
+**Questions before you begin?**
+
+with a subtle downward cue.
+
+The next section will handle questions.
+
+---
+
+# 7. MOTION
+
+Very minimal.
+
+Optional:
+
+* guarantee duration fades in
+* thin divider animates subtly into place
+
+No spinning badges.
+
+No bouncing shield.
+
+No confetti.
+
+Respect `prefers-reduced-motion`.
+
+---
+
+# 8. RESPONSIVE
+
+Ensure:
+
+* no horizontal overflow
+* readable guarantee copy
+* strong typography hierarchy
+* comfortable mobile spacing
+* accessible contrast
+* keyboard accessibility where interactive elements exist
+
+---
+
+## IMPORTANT
+
+This section should be **much shorter than Sections 1–8**.
+
+Think:
+
+**reassurance, not another pitch.**
+
+The visitor should understand the guarantee in roughly 5–10 seconds.
+
+Reuse the existing design system exactly.
+
+Do not modify earlier sections.
+
+Do not build FAQ, final CTA, or footer.
+
+Build ONLY Section 9 and stop.

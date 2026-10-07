@@ -1,0 +1,311 @@
+/* ==========================================================================
+   Section 5 — The Experience (Social Proof / Testimonials)
+   Editorial Quotes × Asymmetric Rhythms × Semantic Attribution
+   ========================================================================== */
+
+.experience-section {
+  position: relative;
+  padding-top: clamp(4.5rem, 3.5rem + 5vw, 8.5rem);
+  padding-bottom: clamp(4.5rem, 3.5rem + 5vw, 8.5rem);
+  background-color: var(--color-bg-elevated);
+  border-top: 1px solid var(--color-border-subtle);
+  overflow: hidden;
+}
+
+/* Background Warmth Glow */
+.experience-section::before {
+  content: '';
+  position: absolute;
+  top: 15%;
+  left: -10%;
+  width: 50vw;
+  height: 50vw;
+  max-width: 650px;
+  background: radial-gradient(circle, rgba(168, 124, 130, 0.04) 0%, rgba(88, 28, 38, 0.02) 45%, transparent 75%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ==========================================================================
+   Section Header
+   ========================================================================== */
+
+.experience-header {
+  position: relative;
+  z-index: var(--z-base);
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto clamp(3.5rem, 2.5rem + 3vw, 5rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.experience-eyebrow-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: clamp(0.9rem, 0.7rem + 0.5vw, 1.35rem);
+}
+
+.experience-eyebrow-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.85rem;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-full);
+}
+
+.experience-eyebrow {
+  font-family: var(--font-body);
+  font-size: var(--font-size-eyebrow);
+  font-weight: 600;
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+}
+
+.experience-headline {
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 1.8rem + 2vw, 3.5rem);
+  font-weight: 400;
+  line-height: 1.12;
+  color: var(--color-text-primary);
+  letter-spacing: -0.02em;
+  margin-bottom: clamp(1rem, 0.8rem + 0.6vw, 1.5rem);
+  text-wrap: balance;
+}
+
+.experience-subtitle {
+  font-size: var(--font-size-body-lg);
+  font-weight: 400;
+  line-height: 1.68;
+  color: var(--color-text-secondary);
+  text-wrap: pretty;
+}
+
+/* ==========================================================================
+   Testimonial Composition Layout
+   ========================================================================== */
+
+.experience-composition {
+  position: relative;
+  z-index: var(--z-base);
+  max-width: 1100px;
+  margin: 0 auto clamp(3.5rem, 2.5rem + 3vw, 5rem);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2rem, 1.5rem + 1.5vw, 3.5rem);
+}
+
+/* Featured Testimonial (Large Editorial Spread) */
+.featured-quote-card {
+  position: relative;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-lg);
+  padding: clamp(2.25rem, 1.8rem + 2vw, 4rem);
+  box-shadow: var(--shadow-card);
+  transition: border-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.featured-quote-card:hover {
+  border-color: rgba(88, 28, 38, 0.25);
+  box-shadow: 0 14px 36px -10px rgba(24, 21, 20, 0.08);
+}
+
+.quote-mark-icon {
+  font-family: var(--font-display);
+  font-size: clamp(3.5rem, 2.8rem + 2vw, 5.5rem);
+  line-height: 0.75;
+  color: var(--color-accent-wine);
+  opacity: 0.45;
+  margin-bottom: 1.25rem;
+  user-select: none;
+}
+
+.featured-quote-text {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 1.15rem + 0.9vw, 2.05rem);
+  font-weight: 400;
+  line-height: 1.35;
+  color: var(--color-text-primary);
+  letter-spacing: -0.012em;
+  margin-bottom: clamp(1.5rem, 1.2rem + 0.8vw, 2.25rem);
+  text-wrap: pretty;
+}
+
+.featured-quote-text .quote-highlight {
+  font-style: italic;
+  color: var(--color-accent-wine);
+}
+
+.featured-attribution-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--color-border-subtle);
+}
+
+.author-info {
+  display: flex;
+  align-items: baseline;
+  gap: 0.65rem;
+}
+
+.author-name {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  letter-spacing: var(--tracking-wide);
+  font-style: normal;
+}
+
+.author-context {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+}
+
+.verified-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: var(--tracking-meta);
+  text-transform: uppercase;
+  color: var(--color-accent-wine);
+  background-color: var(--color-accent-wine-subtle);
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-full);
+}
+
+/* ==========================================================================
+   Secondary Supporting Quotes Grid
+   ========================================================================== */
+
+.supporting-quotes-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(1.5rem, 1.2rem + 1vw, 2.5rem);
+}
+
+@media (min-width: 768px) {
+  .supporting-quotes-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.supporting-quote-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  padding: clamp(1.5rem, 1.2rem + 1vw, 2.25rem);
+  transition: border-color var(--transition-base), transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.supporting-quote-card:hover {
+  border-color: rgba(88, 28, 38, 0.25);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px -8px rgba(24, 21, 20, 0.06);
+}
+
+.supporting-quote-text {
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.supporting-quote-text strong {
+  color: var(--color-text-primary);
+  font-weight: 600;
+}
+
+.supporting-attribution {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border-subtle);
+}
+
+.supporting-author {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  letter-spacing: var(--tracking-wide);
+  font-style: normal;
+}
+
+.supporting-meta {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+/* ==========================================================================
+   Section Transition & Next-Step Subtle CTA
+   ========================================================================== */
+
+.experience-footer {
+  position: relative;
+  z-index: var(--z-base);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.experience-footer-statement {
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 1.05rem + 0.4vw, 1.45rem);
+  font-style: italic;
+  color: var(--color-text-primary);
+}
+
+.experience-subtle-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent-wine);
+  padding: 0.5rem 0.25rem;
+  position: relative;
+  transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.experience-subtle-cta::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-accent-wine);
+  transition: transform var(--transition-fast);
+  transform-origin: left;
+}
+
+.experience-subtle-cta:hover {
+  color: var(--color-accent-wine-hover);
+  transform: translateX(3px);
+}
+
+.experience-subtle-cta:hover::after {
+  transform: scaleX(1.08);
+}

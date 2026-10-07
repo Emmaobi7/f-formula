@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The F-Formula by Flirt Blueprint — A practical framework for creating chemistry, reading the moment, and knowing when to move the interaction forward.">
+  <meta name="theme-color" content="#FAF7F2">
+  <title>The F-Formula — Flirt Blueprint</title>
+
+  <!-- Preconnect to Google Fonts for optimal performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Header & Navigation
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrapper">
+      <!-- Brand Identity -->
+      <a href="#" class="brand-link" aria-label="Flirt Blueprint Home">
+        <span class="brand-monogram" aria-hidden="true">F</span>
+        <span class="brand-text">Flirt Blueprint</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-desktop" aria-label="Main Navigation">
+        <ul class="nav-links-desktop">
+          <li><a href="#formula" class="nav-link is-active">The F-Formula</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#results" class="nav-link">Results</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Navigation Actions -->
+      <div class="nav-actions">
+        <a href="#formula" class="btn-nav-cta">
+          <span>Get the Formula</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Trigger -->
+        <button 
+          class="menu-toggle-btn" 
+          aria-expanded="false" 
+          aria-controls="mobileDrawer" 
+          aria-label="Toggle navigation menu"
+          id="menuToggleBtn"
+        >
+          <span class="menu-toggle-icon" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer" id="mobileDrawer" aria-hidden="true">
+    <nav class="mobile-nav" aria-label="Mobile Navigation">
+      <ul class="mobile-nav-links">
+        <li><a href="#formula" class="mobile-nav-link">The F-Formula</a></li>
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#results" class="mobile-nav-link">Results</a></li>
+        <li><a href="#faq" class="mobile-nav-link">FAQ</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-drawer-footer">
+      <a href="#formula" class="btn-nav-cta mobile-drawer-cta">Get the Formula</a>
+      <div class="mobile-drawer-meta">Editorial Relationship Framework</div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Main Content / Hero Section
+       ========================================================================== -->
+  <main id="mainContent">
+    <section class="hero-section" aria-labelledby="heroHeadline">
+      <div class="container hero-grid">
+        
+        <!-- Left: Primary Editorial Content -->
+        <div class="hero-content">
+          <!-- Small Eyebrow -->
+          <div class="hero-eyebrow-wrapper animate-reveal delay-1">
+            <div class="hero-eyebrow-pill">
+              <span class="eyebrow-dot" aria-hidden="true"></span>
+              <span class="hero-eyebrow">The F-Formula</span>
+            </div>
+          </div>
+
+          <!-- Large Editorial Headline -->
+          <h1 class="hero-title animate-reveal delay-2" id="heroHeadline">
+            Flirting isn't about having the perfect line. <span class="title-accent">It's about knowing what happens next.</span>
+          </h1>
+
+          <!-- Supporting Copy -->
+          <p class="hero-description animate-reveal delay-3">
+            A practical framework for creating chemistry, reading the moment, and knowing when to move the interaction forward.
+          </p>
+
+          <!-- Call To Action Pair -->
+          <div class="hero-actions animate-reveal delay-4">
+            <a href="#formula" class="btn-primary">
+              <span>Explore The F-Formula</span>
+              <svg class="btn-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <button 
+              type="button" 
+              class="btn-secondary-action" 
+              data-action="play-video"
+              aria-label="Watch the introductory campaign film"
+            >
+              <span class="play-icon-mini" aria-hidden="true">▶</span>
+              <span>Watch The Intro</span>
+            </button>
+          </div>
+
+          <!-- Hero Details / Metadata Line -->
+          <div class="hero-metadata animate-reveal delay-5" aria-label="Program Specifications">
+            <span class="meta-item">3 Phases</span>
+            <span class="meta-separator" aria-hidden="true">·</span>
+            <span class="meta-item">Practical Framework</span>
+            <span class="meta-separator" aria-hidden="true">·</span>
+            <span class="meta-item">Lifetime Access</span>
+          </div>
+        </div>
+
+        <!-- Right: Cinematic Video Asset Composition -->
+        <div class="hero-visual-wrapper animate-reveal delay-3">
+          <div class="cinematic-frame">
+            <div class="cinematic-media-container">
+              <!-- High-End Editorial Cinematic Poster Image -->
+              <img 
+                src="./assets/hero-cinematic.jpg" 
+                alt="A sophisticated couple sharing an intimate, confident conversation in a luxury setting" 
+                class="cinematic-poster"
+                width="1280"
+                height="720"
+                fetchpriority="high"
+              >
+
+              <!-- Editorial Vignette & Information Layer -->
+              <div class="cinematic-overlay">
+                <!-- Top Badge -->
+                <div class="video-badge-top">
+                  <span class="video-badge-pill">Campaign Intro</span>
+                  <span class="video-badge-duration" aria-label="Video length 4 minutes 38 seconds">4:38</span>
+                </div>
+
+                <!-- Central Custom Play Button -->
+                <button 
+                  type="button" 
+                  class="play-trigger-center" 
+                  data-action="play-video" 
+                  aria-label="Play introductory presentation video"
+                >
+                  <div class="play-ring-outer" aria-hidden="true"></div>
+                  <div class="play-button-disc">
+                    <svg class="play-icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+                      <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                    </svg>
+                  </div>
+                </button>
+
+                <!-- Bottom Information -->
+                <div class="video-footer-info">
+                  <div>
+                    <h2 class="video-caption-title">The Anatomy of Chemistry</h2>
+                    <p class="video-caption-sub">Executive Overview & Interaction Dynamics</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 2 — The Shift
+         ========================================================================== -->
+    <section class="shift-section" id="the-shift" aria-labelledby="shiftHeading">
+      <div class="container shift-grid">
+        
+        <!-- Left: Intellectual Pivot & Editorial Statement -->
+        <div class="shift-content reveal-on-scroll">
+          <!-- Eyebrow -->
+          <div class="shift-eyebrow-wrapper">
+            <div class="shift-eyebrow-pill">
+              <span class="eyebrow-dot" aria-hidden="true"></span>
+              <span class="shift-eyebrow">The Shift</span>
+            </div>
+          </div>
+
+          <!-- Large Editorial Statement -->
+          <h2 class="shift-headline" id="shiftHeading">
+            Stop searching for the perfect line.
+          </h2>
+
+          <!-- Secondary Sub-Statement -->
+          <p class="shift-substatement">
+            Great conversations aren't scripted. They're navigated.
+          </p>
+
+          <!-- Core Explanatory Copy -->
+          <p class="shift-description">
+            Most advice teaches you to memorize pre-packaged lines and artificial routines. But authentic attraction isn't mechanical — it unfolds in real time through timing, vocal tone, emotional calibration, and unspoken chemistry.
+          </p>
+          <p class="shift-description">
+            When you understand the fundamental phases of an interaction, you never have to guess what to say next. You learn to read the moment with clarity and respond with effortless confidence.
+          </p>
+
+          <!-- Editorial Micro-Principle Note -->
+          <div class="shift-principle">
+            <span class="shift-principle-label">Core Philosophy</span>
+            <p class="shift-principle-text">
+              Flirting is not a performance you put on. It is a dynamic connection you create together.
+            </p>
+          </div>
+        </div>
+
+        <!-- Right: Art-Directed Visual Composition -->
+        <div class="shift-visual-wrapper reveal-on-scroll">
+          <div class="shift-image-frame">
+            <img 
+              src="./assets/the-shift.jpg" 
+              alt="An intimate, engaging conversation between a stylish couple in an elegant evening venue" 
+              class="shift-image"
+              loading="lazy"
+              width="1000"
+              height="750"
+            >
+            <div class="shift-image-overlay">
+              <span class="shift-caption-tag">Interaction & Presence</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 3 — The Framework
+         ========================================================================== -->
+    <section class="framework-section" id="formula" aria-labelledby="frameworkHeading">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <header class="framework-header reveal-on-scroll">
+          <div class="framework-eyebrow-wrapper">
+            <div class="framework-eyebrow-pill">
+              <span class="eyebrow-dot" aria-hidden="true"></span>
+              <span class="framework-eyebrow">The F-Formula</span>
+            </div>
+          </div>
+
+          <h2 class="framework-title" id="frameworkHeading">
+            Three phases. One conversation.
+          </h2>
+
+          <p class="framework-subtitle">
+            A structured framework designed to help you read interaction dynamics in real time, build natural chemistry, and know precisely when to move forward.
+          </p>
+        </header>
+
+        <!-- Horizontal Progression Track (Mobile: Vertical Progression) -->
+        <div class="framework-progression-track" id="frameworkProgressionTrack">
+          <!-- Phase 01 -->
+          <article class="framework-phase-card reveal-on-scroll" tabindex="0" aria-label="Phase 01: Foundation & Calibration">
+            <div class="phase-header-row">
+              <span class="phase-numeral" aria-hidden="true">01</span>
+              <span class="phase-pill-tag">Movement I</span>
+            </div>
+            <h3 class="phase-title">Foundation & Calibration</h3>
+            <p class="phase-description">
+              Establishing genuine presence, reading subtle social cues, and creating comfortable mutual curiosity without forced routines or awkward pressure.
+            </p>
+            <div class="phase-focus-row">
+              <span class="phase-focus-label">Primary Focus</span>
+              <span class="phase-focus-value">Comfort & Rapport</span>
+            </div>
+          </article>
+
+          <!-- Phase 02 -->
+          <article class="framework-phase-card reveal-on-scroll" tabindex="0" aria-label="Phase 02: Playful Tension & Banter">
+            <div class="phase-header-row">
+              <span class="phase-numeral" aria-hidden="true">02</span>
+              <span class="phase-pill-tag">Movement II</span>
+            </div>
+            <h3 class="phase-title">Playful Tension & Banter</h3>
+            <p class="phase-description">
+              Introducing calibrated wit, subtle subtext, and vocal inflection to shift the interaction from a polite conversation into genuine romantic chemistry.
+            </p>
+            <div class="phase-focus-row">
+              <span class="phase-focus-label">Primary Focus</span>
+              <span class="phase-focus-value">Chemistry & Spark</span>
+            </div>
+          </article>
+
+          <!-- Phase 03 -->
+          <article class="framework-phase-card reveal-on-scroll" tabindex="0" aria-label="Phase 03: Transition & Escalation">
+            <div class="phase-header-row">
+              <span class="phase-numeral" aria-hidden="true">03</span>
+              <span class="phase-pill-tag">Movement III</span>
+            </div>
+            <h3 class="phase-title">Transition & Escalation</h3>
+            <p class="phase-description">
+              Recognizing receptive signals with clarity and moving the dynamic forward seamlessly—deepening personal connection and setting up the next encounter.
+            </p>
+            <div class="phase-focus-row">
+              <span class="phase-focus-label">Primary Focus</span>
+              <span class="phase-focus-value">Intimacy & Direction</span>
+            </div>
+          </article>
+        </div>
+
+        <!-- Product Connection Transition & Subtle CTA -->
+        <footer class="framework-footer reveal-on-scroll">
+          <p class="framework-footer-statement">
+            This is the thinking behind The F-Formula.
+          </p>
+          <a href="#about" class="framework-subtle-cta" aria-label="Explore program contents">
+            <span>See what's inside</span>
+            <span aria-hidden="true">→</span>
+          </a>
+        </footer>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 4 — The Woman Behind The Method (Founder Profile)
+         ========================================================================== -->
+    <section class="founder-section" id="about" aria-labelledby="founderHeading">
+      <div class="container founder-grid">
+        
+        <!-- Left: Photographic Portrait Frame (Appears first on Mobile) -->
+        <div class="founder-visual-column reveal-on-scroll">
+          <div class="founder-portrait-frame">
+            <img 
+              src="./assets/founder-marni.jpg" 
+              alt="Marni, creator of The Flirt Blueprint, in a warm, refined editorial studio setting" 
+              class="founder-portrait-img"
+              loading="lazy"
+              width="900"
+              height="1200"
+            >
+            <div class="founder-portrait-overlay">
+              <span class="founder-caption-tag">Marni · Creator</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Profile Content & Authority Narrative -->
+        <div class="founder-content-column reveal-on-scroll">
+          <!-- Eyebrow -->
+          <div class="founder-eyebrow-wrapper">
+            <div class="founder-eyebrow-pill">
+              <span class="eyebrow-dot" aria-hidden="true"></span>
+              <span class="founder-eyebrow">The Woman Behind The Method</span>
+            </div>
+          </div>
+
+          <!-- Headline -->
+          <h2 class="founder-headline" id="founderHeading">
+            Experience changes the way you <span class="headline-italic">see the conversation.</span>
+          </h2>
+
+          <!-- Concise Biography (145 words across 3 paragraphs) -->
+          <div class="founder-bio-paragraphs">
+            <p class="founder-bio-p">
+              For years, men have been handed scripts, pick-up routines, and aggressive tactics that feel unnatural to use and uncomfortable to receive. The missing element has never been more lines—it has always been emotional clarity.
+            </p>
+            <p class="founder-bio-p">
+              Marni created The Flirt Blueprint to demystify female attraction from an honest, inside perspective. Her approach strips away the performance, showing you how to read nuance, build authentic tension, and communicate with relaxed certainty.
+            </p>
+            <p class="founder-bio-p">
+              Developed through extensive real-world advisory, The F-Formula provides an intuitive framework that allows your natural personality to lead the interaction without second-guessing.
+            </p>
+          </div>
+
+          <!-- History / Authority Annotation Element -->
+          <div class="founder-authority-card">
+            <span class="founder-authority-label">Established Heritage</span>
+            <p class="founder-authority-statement">
+              Over a decade of trusted relationship advisory, helping thousands of men master authentic connection worldwide.
+            </p>
+          </div>
+
+          <!-- Subtle Next-Step Text Link -->
+          <a href="#formula" class="founder-subtle-link" aria-label="Discover the F-Formula method">
+            <span>Discover the method</span>
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 5 — The Experience (Social Proof / Testimonials)
+         ========================================================================== -->
+    <section class="experience-section" id="results" aria-labelledby="experienceHeading">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <header class="experience-header reveal-on-scroll">
+          <div class="experience-eyebrow-wrapper">
+            <div class="experience-eyebrow-pill">
+              <span class="eyebrow-dot" aria-hidden="true"></span>
+              <span class="experience-eyebrow">The Experience</span>
+            </div>
+          </div>
+
+          <h2 class="experience-headline" id="experienceHeading">
+            Different men. Different situations. <span class="headline-italic">The same shift in perspective.</span>
+          </h2>
+
+          <p class="experience-subtitle">
+            Authentic experiences from men who stopped guessing what to say and started understanding the natural rhythm of attraction.
+          </p>
+        </header>
+
+        <!-- Editorial Testimonial Composition -->
+        <div class="experience-composition">
+          
+          <!-- Large Featured Quote -->
+          <article class="featured-quote-card reveal-on-scroll">
+            <div class="quote-mark-icon" aria-hidden="true">“</div>
+            <blockquote class="featured-quote-text">
+              The biggest breakthrough wasn’t learning a magic script—it was <span class="quote-highlight">understanding the conversation as a progression.</span> For the first time, I could read the tension in the room and knew exactly when to lean in rather than second-guessing myself.
+            </blockquote>
+            <div class="featured-attribution-row">
+              <div class="author-info">
+                <cite class="author-name">David M.</cite>
+                <span class="author-context">· Chicago, IL</span>
+              </div>
+              <span class="verified-pill">Verified Member</span>
+            </div>
+          </article>
+
+          <!-- Supporting Editorial Excerpts -->
+          <div class="supporting-quotes-grid">
+            <article class="supporting-quote-card reveal-on-scroll">
+              <blockquote class="supporting-quote-text">
+                “Most advice treats flirting like a high-pressure performance. Marni’s framework completely removed the anxiety because it taught me to pay attention to <strong>subtle cues instead of constantly worrying about what line to deliver next</strong>.”
+              </blockquote>
+              <div class="supporting-attribution">
+                <cite class="supporting-author">Marcus T.</cite>
+                <span class="supporting-meta">London, UK · Client</span>
+              </div>
+            </article>
+
+            <article class="supporting-quote-card reveal-on-scroll">
+              <blockquote class="supporting-quote-text">
+                “Breaking attraction down into three clear phases makes everything intuitive. It gave me the <strong>quiet confidence to let my natural humor come through</strong> without forcing the outcome.”
+              </blockquote>
+              <div class="supporting-attribution">
+                <cite class="supporting-author">Julian R.</cite>
+                <span class="supporting-meta">Sydney, AU · Member</span>
+              </div>
+            </article>
+          </div>
+
+        </div>
+
+        <!-- Section Transition & Subtle Next-Step CTA -->
+        <footer class="experience-footer reveal-on-scroll">
+          <p class="experience-footer-statement">
+            Now see what's inside.
+          </p>
+          <a href="#product-details" class="experience-subtle-cta" aria-label="Explore The F-Formula contents">
+            <span>Explore The F-Formula</span>
+            <span aria-hidden="true">→</span>
+          </a>
+        </footer>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 6 — Inside The F-Formula (Product Reveal & Curriculum)
+         ========================================================================== -->
+    <section class="product-section" id="product-details" aria-labelledby="productHeading">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <header class="product-header reveal-on-scroll">
+          <div class="product-eyebrow-wrapper">
+            <div class="product-eyebrow-pill">
+              <span class="eyebrow-dot" aria-hidden="true"></span>
+              <span class="product-eyebrow">Inside The F-Formula</span>
+            </div>
+          </div>
+
+          <h2 class="product-headline" id="productHeading">
+            Everything you need to <span class="headline-italic">understand the method.</span>
+          </h2>
+
+          <p class="product-subtitle">
+            A comprehensive, multi-format curriculum designed for deep understanding and immediate real-world application.
+          </p>
+        </header>
+
+        <!-- Product Presentation Grid -->
+        <div class="product-grid">
+          
+          <!-- Left: Hero Tactile Mockup Visual -->
+          <div class="product-visual-wrapper reveal-on-scroll">
+            <div class="product-mockup-frame">
+              <img 
+                src="./assets/product-guide-mockup.jpg" 
+                alt="The F-Formula hardcover clothbound manual on a warm studio desk alongside manuscript study sheets" 
+                class="product-mockup-img"
+                loading="lazy"
+                width="1000"
+                height="750"
+              >
+              <div class="product-mockup-overlay">
+                <span class="product-tag-pill">Complete Edition</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Structured Contents Breakdown (Table of Contents Style) -->
+          <div class="product-contents-column reveal-on-scroll">
+            <div class="product-contents-list" role="list">
+              
+              <!-- Item 01 -->
+              <article class="product-item-row" role="listitem">
+                <span class="item-numeral" aria-hidden="true">01</span>
+                <div class="item-details">
+                  <div class="item-header-meta">
+                    <h3 class="item-title">The Comprehensive Foundation Guide</h3>
+                    <span class="item-format-tag">Digital Volume</span>
+                  </div>
+                  <p class="item-description">
+                    The core manual detailing the complete 3-phase framework, transition principles, and internal mindset shifts required to navigate interactions with calm certainty.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Item 02 -->
+              <article class="product-item-row" role="listitem">
+                <span class="item-numeral" aria-hidden="true">02</span>
+                <div class="item-details">
+                  <div class="item-header-meta">
+                    <h3 class="item-title">Video Breakdowns & Scenario Analysis</h3>
+                    <span class="item-format-tag">HD Video</span>
+                  </div>
+                  <p class="item-description">
+                    Direct visual walk-throughs analyzing real conversation dynamics, calibrated pauses, body language nuances, and practical recovery from awkward moments.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Item 03 -->
+              <article class="product-item-row" role="listitem">
+                <span class="item-numeral" aria-hidden="true">03</span>
+                <div class="item-details">
+                  <div class="item-header-meta">
+                    <h3 class="item-title">Audio Masterclass Lessons</h3>
+                    <span class="item-format-tag">MP3 Audio</span>
+                  </div>
+                  <p class="item-description">
+                    High-yield audio sessions focused on vocal inflection, pacing, and subtext that you can listen to anywhere to internalize conversational presence.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Item 04 -->
+              <article class="product-item-row" role="listitem">
+                <span class="item-numeral" aria-hidden="true">04</span>
+                <div class="item-details">
+                  <div class="item-header-meta">
+                    <h3 class="item-title">Field Action Guides & Reference</h3>
+                    <span class="item-format-tag">Field Sheets</span>
+                  </div>
+                  <p class="item-description">
+                    Concise reference cheat sheets and situational diagnostic tools designed for quick review before any social event or date.
+                  </p>
+                </div>
+              </article>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Section Transition & Next-Step Subtle CTA -->
+        <footer class="product-footer reveal-on-scroll">
+          <p class="product-footer-statement">
+            There's more.
+          </p>
+          <a href="#bonuses" class="product-subtle-cta" aria-label="Explore the included bonuses">
+            <span>Explore the bonuses</span>
+            <span aria-hidden="true">→</span>
+          </a>
+        </footer>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 7 — The Bonuses (Included Companion Resources)
+         ========================================================================== -->
+    <section class="bonuses-section" id="bonuses" aria-labelledby="bonusesHeading">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <header class="bonuses-header reveal-on-scroll">
+          <div class="bonuses-eyebrow-wrapper">
+            <div class="bonuses-eyebrow-pill">
+              <span class="eyebrow-dot" aria-hidden="true"></span>
+              <span class="bonuses-eyebrow">Companion Resources</span>
+            </div>
+          </div>
+
+          <h2 class="bonuses-headline" id="bonusesHeading">
+            The F-Formula comes with <span class="headline-italic">more than the formula itself.</span>
+          </h2>
+
+          <p class="bonuses-subtitle">
+            Curated companion guides and deep-dive audio masterclasses engineered to support your progress across specific conversational environments.
+          </p>
+        </header>
+
+        <!-- Editorial Bonus Catalogue Stack -->
+        <div class="bonuses-stack" role="list">
+          
+          <!-- Bonus 01 -->
+          <article class="bonus-row-item reveal-on-scroll" role="listitem">
+            <span class="bonus-numeral" aria-hidden="true">01</span>
+            <div class="bonus-content-col">
+              <h3 class="bonus-title">The Flirt Blueprint Field Execution Manual</h3>
+              <p class="bonus-description">
+                Specific environmental protocols for day encounters, evening social venues, and casual gatherings. Provides direct clarity on opening conversations and setting a comfortable tone.
+              </p>
+            </div>
+            <div class="bonus-meta-col">
+              <span class="bonus-status-pill">Included In Package</span>
+              <span class="bonus-format-label">Digital Field Guide</span>
+            </div>
+          </article>
+
+          <!-- Bonus 02 -->
+          <article class="bonus-row-item reveal-on-scroll" role="listitem">
+            <span class="bonus-numeral" aria-hidden="true">02</span>
+            <div class="bonus-content-col">
+              <h3 class="bonus-title">The Conversation Recovery Playbook</h3>
+              <p class="bonus-description">
+                Practical strategies for smoothly recalibrating when a conversation stalls, tension dips, or an interaction feels off-track without becoming flustered or self-conscious.
+              </p>
+            </div>
+            <div class="bonus-meta-col">
+              <span class="bonus-status-pill">Included In Package</span>
+              <span class="bonus-format-label">Case Studies (PDF)</span>
+            </div>
+          </article>
+
+          <!-- Bonus 03 -->
+          <article class="bonus-row-item reveal-on-scroll" role="listitem">
+            <span class="bonus-numeral" aria-hidden="true">03</span>
+            <div class="bonus-content-col">
+              <h3 class="bonus-title">The Non-Verbal Subtext Masterclass</h3>
+              <p class="bonus-description">
+                A deep-dive visual breakdown on subtle female non-verbal cues: micro-expressions, proximity calibration, eye contact duration, and physical escalation readiness.
+              </p>
+            </div>
+            <div class="bonus-meta-col">
+              <span class="bonus-status-pill">Included In Package</span>
+              <span class="bonus-format-label">Video Masterclass</span>
+            </div>
+          </article>
+
+          <!-- Bonus 04 -->
+          <article class="bonus-row-item reveal-on-scroll" role="listitem">
+            <span class="bonus-numeral" aria-hidden="true">04</span>
+            <div class="bonus-content-col">
+              <h3 class="bonus-title">The 7-Day Calibration Audio Series</h3>
+              <p class="bonus-description">
+                Daily audio priming exercises designed to dissolve internal hesitation, warm up your conversational wit, and build unshakeable social presence before stepping out.
+              </p>
+            </div>
+            <div class="bonus-meta-col">
+              <span class="bonus-status-pill">Included In Package</span>
+              <span class="bonus-format-label">7 Audio Sessions (MP3)</span>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Section Transition Toward Offer -->
+        <footer class="bonuses-footer reveal-on-scroll">
+          <p class="bonuses-footer-statement">
+            Everything you need to understand the method. Everything you need to start applying it.
+          </p>
+          <a href="#pricing" class="bonuses-subtle-cta" aria-label="View the complete package and membership options">
+            <span>View the complete package</span>
+            <span aria-hidden="true">→</span>
+          </a>
+        </footer>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 8 — The Offer (Pricing & Commercial Decision)
+         ========================================================================== -->
+    <section class="offer-section" id="pricing" aria-labelledby="offerHeading">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <header class="offer-header reveal-on-scroll">
+          <div class="offer-eyebrow-wrapper">
+            <div class="offer-eyebrow-pill">
+              <span class="eyebrow-dot" aria-hidden="true"></span>
+              <span class="offer-eyebrow">The Complete Experience</span>
+            </div>
+          </div>
+
+          <h2 class="offer-headline" id="offerHeading">
+            Everything comes together <span class="headline-italic">here.</span>
+          </h2>
+
+          <p class="offer-subtitle">
+            The complete foundational manual, all video breakdowns, audio masterclasses, situational action guides, and companion resources in one seamless digital package.
+          </p>
+        </header>
+
+        <!-- Editorial Offer Card (Dark Luxury Contrast Surface) -->
+        <div class="offer-container-card reveal-on-scroll">
+          
+          <!-- Left: Inclusions Checklist & Synthesis -->
+          <div class="offer-inventory-col">
+            <span class="offer-program-tag">The F-Formula System</span>
+            <h3 class="offer-program-title">Your Complete Program Includes:</h3>
+            <p class="offer-program-summary">
+              A comprehensive relationship framework engineered to turn second-guessing into natural conversational confidence.
+            </p>
+
+            <ul class="offer-checklist" role="list">
+              <li class="offer-check-item" role="listitem">
+                <span class="check-numeral" aria-hidden="true">01</span>
+                <span class="check-text"><strong>The Core Foundation Manual</strong> (Complete 3-phase methodology)</span>
+              </li>
+              <li class="offer-check-item" role="listitem">
+                <span class="check-numeral" aria-hidden="true">02</span>
+                <span class="check-text"><strong>HD Video Breakdowns</strong> & real-world scenario analysis</span>
+              </li>
+              <li class="offer-check-item" role="listitem">
+                <span class="check-numeral" aria-hidden="true">03</span>
+                <span class="check-text"><strong>MP3 Audio Masterclasses</strong> for on-the-go calibration</span>
+              </li>
+              <li class="offer-check-item" role="listitem">
+                <span class="check-numeral" aria-hidden="true">04</span>
+                <span class="check-text"><strong>Field Action Guides</strong> & quick situational cheat sheets</span>
+              </li>
+              <li class="offer-check-item" role="listitem">
+                <span class="check-numeral" aria-hidden="true">05</span>
+                <span class="check-text"><strong>All 4 Included Bonus Resources</strong> & calibration series</span>
+              </li>
+              <li class="offer-check-item" role="listitem">
+                <span class="check-numeral" aria-hidden="true">06</span>
+                <span class="check-text"><strong>Instant Digital Access</strong> & lifetime program updates</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right: Pricing Decision, CTA & Trust Anchors -->
+          <div class="offer-decision-box">
+            <span class="price-label">One-Time Investment</span>
+            <div class="price-display-row" aria-label="Price: forty seven dollars">
+              <span class="price-currency" aria-hidden="true">$</span>
+              <span class="price-amount">47</span>
+            </div>
+            <p class="price-term">One-time payment · Lifetime access</p>
+
+            <button type="button" class="btn-offer-purchase" aria-label="Get the F-Formula complete program for forty seven dollars">
+              <span>Get The F-Formula</span>
+              <svg class="purchase-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+
+            <p class="offer-reassurance-note">
+              Immediate access delivered to your inbox. Fully compatible with iOS, Android, and Desktop.
+            </p>
+
+            <div class="offer-confidence-row" aria-label="Security and access features">
+              <span class="confidence-item">
+                <span class="confidence-icon" aria-hidden="true">🔒</span>
+                <span>256-Bit Secure</span>
+              </span>
+              <span class="confidence-item">
+                <span class="confidence-icon" aria-hidden="true">⚡</span>
+                <span>Instant Access</span>
+              </span>
+              <span class="confidence-item">
+                <span class="confidence-icon" aria-hidden="true">♾️</span>
+                <span>Lifetime Access</span>
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 9 — The Guarantee (Editorial Reassurance)
+         ========================================================================== -->
+    <section class="guarantee-section" id="guarantee" aria-labelledby="guaranteeHeading">
+      <div class="container guarantee-container">
+        
+        <div class="guarantee-grid">
+          
+          <!-- Left: Reassurance Narrative -->
+          <div class="guarantee-content-col reveal-on-scroll">
+            <div class="guarantee-eyebrow-wrapper">
+              <div class="guarantee-eyebrow-pill">
+                <span class="eyebrow-dot" aria-hidden="true"></span>
+                <span class="guarantee-eyebrow">Your Purchase Is Protected</span>
+              </div>
+            </div>
+
+            <h2 class="guarantee-headline" id="guaranteeHeading">
+              Try The F-Formula with <span class="headline-italic">confidence.</span>
+            </h2>
+
+            <p class="guarantee-description">
+              Explore the complete manual, study the video breakdowns, and listen to the audio sessions at your own pace. If the framework does not deliver the conversational clarity and confidence you expect, simply send a message within 60 days of purchase for a prompt refund—no pressure and no awkward questions asked.
+            </p>
+          </div>
+
+          <!-- Right: Typographic Guarantee Seal -->
+          <div class="guarantee-seal-col reveal-on-scroll">
+            <span class="seal-period-number">60</span>
+            <span class="seal-period-unit">Days</span>
+            <div class="seal-divider-line" aria-hidden="true"></div>
+            <span class="seal-terms-text">Complete Refund Guarantee</span>
+          </div>
+
+        </div>
+
+        <!-- Section Transition Toward FAQ -->
+        <footer class="guarantee-footer reveal-on-scroll">
+          <a href="#faq" class="guarantee-faq-cue" aria-label="Skip to frequently asked questions">
+            <span>Questions before you begin?</span>
+            <span aria-hidden="true">↓</span>
+          </a>
+        </footer>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 10 — Frequently Asked Questions (Editorial Accordion)
+         ========================================================================== -->
+    <section class="faq-section" id="faq" aria-labelledby="faqHeading">
+      <div class="container faq-container">
+        
+        <div class="faq-grid">
+          
+          <!-- Left Column: Sticky Section Header -->
+          <div class="faq-header-col reveal-on-scroll">
+            <div class="faq-eyebrow-wrapper">
+              <div class="faq-eyebrow-pill">
+                <span class="eyebrow-dot" aria-hidden="true"></span>
+                <span class="faq-eyebrow">Questions, Answered</span>
+              </div>
+            </div>
+
+            <h2 class="faq-headline" id="faqHeading">
+              Before you <span class="headline-italic">begin.</span>
+            </h2>
+
+            <p class="faq-subtitle">
+              Clear, practical answers regarding program format, delivery, and access.
+            </p>
+          </div>
+
+          <!-- Right Column: Editorial Accordion List -->
+          <div class="faq-list-col reveal-on-scroll">
+            <div class="faq-list" role="region" aria-label="Frequently Asked Questions List">
+              
+              <!-- FAQ 1 (Open by default on desktop for instant clarity) -->
+              <div class="faq-item">
+                <button 
+                  type="button" 
+                  class="faq-trigger" 
+                  aria-expanded="true" 
+                  aria-controls="faq-answer-1" 
+                  id="faq-btn-1"
+                >
+                  <span class="faq-question-text">What exactly is The F-Formula?</span>
+                  <span class="faq-icon-wrapper" aria-hidden="true">
+                    <span class="faq-icon-line faq-icon-line-h"></span>
+                    <span class="faq-icon-line faq-icon-line-v"></span>
+                  </span>
+                </button>
+                <div class="faq-answer-panel is-open" id="faq-answer-1" role="region" aria-labelledby="faq-btn-1">
+                  <div class="faq-answer-inner">
+                    <p class="faq-answer-text">
+                      The F-Formula is a structured 3-phase educational framework designed by Marni Kinrys to teach men the natural progression of flirtation, conversation dynamics, and non-verbal calibration—without memorizing scripts or using manipulative pickup routines.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 2 -->
+              <div class="faq-item">
+                <button 
+                  type="button" 
+                  class="faq-trigger" 
+                  aria-expanded="false" 
+                  aria-controls="faq-answer-2" 
+                  id="faq-btn-2"
+                >
+                  <span class="faq-question-text">What formats and materials are included?</span>
+                  <span class="faq-icon-wrapper" aria-hidden="true">
+                    <span class="faq-icon-line faq-icon-line-h"></span>
+                    <span class="faq-icon-line faq-icon-line-v"></span>
+                  </span>
+                </button>
+                <div class="faq-answer-panel" id="faq-answer-2" role="region" aria-labelledby="faq-btn-2" aria-hidden="true">
+                  <div class="faq-answer-inner">
+                    <p class="faq-answer-text">
+                      You receive the complete foundation manual (PDF), HD video breakdown scenario analyses, portable MP3 audio masterclasses, printable situational field reference sheets, and all 4 included bonus resources.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 3 -->
+              <div class="faq-item">
+                <button 
+                  type="button" 
+                  class="faq-trigger" 
+                  aria-expanded="false" 
+                  aria-controls="faq-answer-3" 
+                  id="faq-btn-3"
+                >
+                  <span class="faq-question-text">How and when will I receive access?</span>
+                  <span class="faq-icon-wrapper" aria-hidden="true">
+                    <span class="faq-icon-line faq-icon-line-h"></span>
+                    <span class="faq-icon-line faq-icon-line-v"></span>
+                  </span>
+                </button>
+                <div class="faq-answer-panel" id="faq-answer-3" role="region" aria-labelledby="faq-btn-3" aria-hidden="true">
+                  <div class="faq-answer-inner">
+                    <p class="faq-answer-text">
+                      Access is immediate. As soon as your order completes, you will receive an email containing your private access details to view, listen to, or download all resources on your smartphone, tablet, or computer.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 4 -->
+              <div class="faq-item">
+                <button 
+                  type="button" 
+                  class="faq-trigger" 
+                  aria-expanded="false" 
+                  aria-controls="faq-answer-4" 
+                  id="faq-btn-4"
+                >
+                  <span class="faq-question-text">Is this framework suitable if I am introverted?</span>
+                  <span class="faq-icon-wrapper" aria-hidden="true">
+                    <span class="faq-icon-line faq-icon-line-h"></span>
+                    <span class="faq-icon-line faq-icon-line-v"></span>
+                  </span>
+                </button>
+                <div class="faq-answer-panel" id="faq-answer-4" role="region" aria-labelledby="faq-btn-4" aria-hidden="true">
+                  <div class="faq-answer-inner">
+                    <p class="faq-answer-text">
+                      Yes. The methodology does not ask you to become an extroverted or loud personality. It focuses on internalizing conversational timing, presence, and reading cues so your authentic humor and natural personality lead the interaction.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 5 -->
+              <div class="faq-item">
+                <button 
+                  type="button" 
+                  class="faq-trigger" 
+                  aria-expanded="false" 
+                  aria-controls="faq-answer-5" 
+                  id="faq-btn-5"
+                >
+                  <span class="faq-question-text">How does the 60-day guarantee work?</span>
+                  <span class="faq-icon-wrapper" aria-hidden="true">
+                    <span class="faq-icon-line faq-icon-line-h"></span>
+                    <span class="faq-icon-line faq-icon-line-v"></span>
+                  </span>
+                </button>
+                <div class="faq-answer-panel" id="faq-answer-5" role="region" aria-labelledby="faq-btn-5" aria-hidden="true">
+                  <div class="faq-answer-inner">
+                    <p class="faq-answer-text">
+                      You have a full 60 days to review the entire manual, watch the video walk-throughs, and listen to the audio sessions. If you feel the framework hasn’t provided the conversational clarity you expected, simply email support for a prompt, complete refund.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 6 -->
+              <div class="faq-item">
+                <button 
+                  type="button" 
+                  class="faq-trigger" 
+                  aria-expanded="false" 
+                  aria-controls="faq-answer-6" 
+                  id="faq-btn-6"
+                >
+                  <span class="faq-question-text">Is my order and billing information discreet?</span>
+                  <span class="faq-icon-wrapper" aria-hidden="true">
+                    <span class="faq-icon-line faq-icon-line-h"></span>
+                    <span class="faq-icon-line faq-icon-line-v"></span>
+                  </span>
+                </button>
+                <div class="faq-answer-panel" id="faq-answer-6" role="region" aria-labelledby="faq-btn-6" aria-hidden="true">
+                  <div class="faq-answer-inner">
+                    <p class="faq-answer-text">
+                      Yes. All transactions are protected by 256-bit SSL encryption. Billing is completely discreet with no awkward references on your statement.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Quiet Transition toward Final Decision -->
+        <footer class="faq-footer reveal-on-scroll">
+          <p class="faq-footer-statement">
+            Still curious about how the methodology applies to you?
+          </p>
+        </footer>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 11 — The Final Invitation (Closing Narrative & CTA)
+         ========================================================================== -->
+    <section class="invitation-section" id="invitation" aria-labelledby="invitationHeading">
+      <div class="container invitation-container">
+        
+        <!-- Eyebrow -->
+        <div class="invitation-eyebrow-wrapper reveal-on-scroll">
+          <div class="invitation-eyebrow-pill">
+            <span class="eyebrow-dot" aria-hidden="true"></span>
+            <span class="invitation-eyebrow">Ready When You Are</span>
+          </div>
+        </div>
+
+        <!-- Headline with Hero Callback -->
+        <h2 class="invitation-headline reveal-on-scroll" id="invitationHeading">
+          You don't need another line. <span class="headline-callback">It's time to know what happens next.</span>
+        </h2>
+
+        <!-- Supporting Narrative -->
+        <p class="invitation-description reveal-on-scroll">
+          The F-Formula gives you a structured, intuitive roadmap to navigate attraction with natural confidence. Join thousands of men who stopped second-guessing the moment.
+        </p>
+
+        <!-- Final Decision Action & Micro-Reassurance -->
+        <div class="invitation-actions reveal-on-scroll">
+          <a href="#pricing" class="btn-invitation-cta" aria-label="Get the complete F-Formula program for forty seven dollars">
+            <span>Get The F-Formula</span>
+            <svg class="invitation-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <span class="invitation-micro-reassurance">One-Time Payment of $47 · 60-Day Guarantee · Instant Access</span>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Section 12 — Site Footer
+       ========================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-container">
+      
+      <!-- Upper Footer Area -->
+      <div class="footer-upper">
+        
+        <!-- Left: Brand Lockup & Brief Description -->
+        <div class="footer-brand-col">
+          <a href="#" class="footer-brand-link" aria-label="Flirt Blueprint Home">
+            <span class="footer-brand-monogram" aria-hidden="true">F</span>
+            <span class="footer-brand-name">Flirt Blueprint</span>
+          </a>
+          <p class="footer-brand-statement">
+            A practical relationship education framework engineered to replace scripted lines with authentic conversational clarity and confident social presence.
+          </p>
+        </div>
+
+        <!-- Right: Structured Navigation Columns -->
+        <div class="footer-nav-groups">
+          <div class="footer-nav-col">
+            <h4 class="footer-nav-group-title">Explore</h4>
+            <ul class="footer-links-list">
+              <li><a href="#formula" class="footer-link">The F-Formula</a></li>
+              <li><a href="#about" class="footer-link">About Marni</a></li>
+              <li><a href="#results" class="footer-link">Member Results</a></li>
+              <li><a href="#product-details" class="footer-link">Inside The Guide</a></li>
+              <li><a href="#faq" class="footer-link">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-nav-col">
+            <h4 class="footer-nav-group-title">Program Access</h4>
+            <ul class="footer-links-list">
+              <li><a href="#pricing" class="footer-link">Get The Formula</a></li>
+              <li><a href="#guarantee" class="footer-link">60-Day Guarantee</a></li>
+              <li><a href="#bonuses" class="footer-link">Included Bonuses</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Lower Footer Area: Copyright & Legal Notice -->
+      <div class="footer-lower">
+        <p class="footer-copyright">
+          © 2026 Flirt Blueprint / The F-Formula. All rights reserved.
+        </p>
+
+        <ul class="footer-legal-links" aria-label="Legal and privacy notices">
+          <li><a href="#guarantee" class="footer-legal-link">Privacy Policy</a></li>
+          <li><a href="#guarantee" class="footer-legal-link">Terms of Service</a></li>
+          <li><a href="#guarantee" class="footer-legal-link">Disclaimers</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Cinematic Video Modal Player
+       ========================================================================== -->
+  <div 
+    class="video-modal" 
+    id="videoModal" 
+    role="dialog" 
+    aria-modal="true" 
+    aria-labelledby="modalTitle" 
+    aria-hidden="true"
+  >
+    <div class="video-modal-content">
+      <div class="video-modal-header">
+        <h3 class="video-modal-title" id="modalTitle">The F-Formula — Executive Presentation</h3>
+        <button 
+          type="button" 
+          class="btn-modal-close" 
+          id="closeVideoModal" 
+          aria-label="Close video player"
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="video-player-wrapper">
+        <video 
+          id="mainVideoElement" 
+          class="active-video-element" 
+          poster="./assets/hero-cinematic.jpg" 
+          preload="none"
+          playsinline
+        >
+          <!-- Using standard webm/mp4 stream or placeholder source -->
+          <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+      </div>
+
+      <div class="video-custom-controls">
+        <button type="button" class="ctrl-btn" id="modalPlayPause" aria-label="Play or Pause video">
+          <svg id="playPauseIcon" width="18" height="18" viewBox="0 0 24 24">
+            <polygon points="5 3 19 12 5 21 5 3" fill="currentColor"></polygon>
+          </svg>
+        </button>
+
+        <div class="video-progress-bar-container">
+          <span class="time-counter" id="timeCurrent">0:00</span>
+          <input type="range" class="video-timeline" id="videoTimeline" min="0" max="100" value="0" aria-label="Video timeline scrubber">
+          <span class="time-counter" id="timeDuration">4:38</span>
+        </div>
+
+        <button type="button" class="ctrl-btn" id="modalMuteToggle" aria-label="Toggle mute">
+          <svg id="muteIcon" width="18" height="18" viewBox="0 0 24 24">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" fill="none" stroke="currentColor" stroke-width="2"></polygon>
+            <path d="M15.54 8.46a5 5 0 0 1 0 7.07" fill="none" stroke="currentColor" stroke-width="2"></path>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14" fill="none" stroke="currentColor" stroke-width="2"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Module -->
+  <script type="module" src="./scripts/main.js"></script>
+</body>
+</html>

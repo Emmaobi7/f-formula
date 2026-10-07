@@ -1,0 +1,212 @@
+/* ==========================================================================
+   Section 9 — The Guarantee (Editorial Reassurance)
+   Restrained Trust × Asymmetric Typographic Seal × Substantial Whitespace
+   ========================================================================== */
+
+.guarantee-section {
+  position: relative;
+  padding-top: clamp(4rem, 3rem + 4vw, 7rem);
+  padding-bottom: clamp(4rem, 3rem + 4vw, 7rem);
+  background-color: var(--color-bg-elevated);
+  border-top: 1px solid var(--color-border-subtle);
+  border-bottom: 1px solid var(--color-border-subtle);
+  overflow: hidden;
+}
+
+/* Subtle background accent */
+.guarantee-section::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60vw;
+  height: 35vw;
+  max-width: 800px;
+  background: radial-gradient(ellipse, rgba(168, 124, 130, 0.03) 0%, rgba(88, 28, 38, 0.015) 50%, transparent 80%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.guarantee-container {
+  position: relative;
+  z-index: var(--z-base);
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+/* ==========================================================================
+   Guarantee Asymmetric Grid
+   ========================================================================== */
+
+.guarantee-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(2.5rem, 2rem + 2vw, 4.5rem);
+  align-items: center;
+  margin-bottom: clamp(2.5rem, 2rem + 2vw, 4rem);
+}
+
+@media (min-width: 860px) {
+  .guarantee-grid {
+    grid-template-columns: 62% 38%;
+    gap: clamp(2.5rem, 2rem + 2.5vw, 4.5rem);
+  }
+}
+
+/* Left Column: Reassurance Narrative */
+.guarantee-content-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.guarantee-eyebrow-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: clamp(0.9rem, 0.7rem + 0.5vw, 1.25rem);
+}
+
+.guarantee-eyebrow-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.85rem;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-full);
+}
+
+.guarantee-eyebrow {
+  font-family: var(--font-body);
+  font-size: var(--font-size-eyebrow);
+  font-weight: 600;
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+}
+
+.guarantee-headline {
+  font-family: var(--font-display);
+  font-size: clamp(2.15rem, 1.7rem + 1.8vw, 3.25rem);
+  font-weight: 400;
+  line-height: 1.12;
+  color: var(--color-text-primary);
+  letter-spacing: -0.02em;
+  margin-bottom: clamp(1rem, 0.8rem + 0.6vw, 1.5rem);
+  text-wrap: balance;
+}
+
+.guarantee-description {
+  font-size: var(--font-size-body);
+  font-weight: 400;
+  line-height: 1.72;
+  color: var(--color-text-secondary);
+}
+
+/* Right Column: Restrained Typographic Guarantee Seal */
+.guarantee-seal-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: clamp(2rem, 1.6rem + 1.5vw, 3rem) clamp(1.5rem, 1.2rem + 1vw, 2.5rem);
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-subtle);
+  position: relative;
+}
+
+@media (min-width: 860px) {
+  .guarantee-seal-col {
+    border-left: 2px solid var(--color-accent-rose);
+  }
+}
+
+.seal-period-number {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 2.4rem + 1.8vw, 4.25rem);
+  font-weight: 400;
+  line-height: 0.95;
+  color: var(--color-accent-wine);
+  letter-spacing: -0.03em;
+  margin-bottom: 0.4rem;
+}
+
+.seal-period-unit {
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 1.15rem + 0.4vw, 1.6rem);
+  font-weight: 500;
+  color: var(--color-text-primary);
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.seal-divider-line {
+  width: 48px;
+  height: 1px;
+  background-color: var(--color-border-medium);
+  margin: 0.5rem auto 0.85rem;
+}
+
+.seal-terms-text {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: var(--tracking-meta);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+/* ==========================================================================
+   Section Transition Toward FAQ
+   ========================================================================== */
+
+.guarantee-footer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.65rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border-subtle);
+}
+
+.guarantee-faq-cue {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent-wine);
+  padding: 0.35rem 0.25rem;
+  position: relative;
+  transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.guarantee-faq-cue::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-accent-wine);
+  transition: transform var(--transition-fast);
+  transform-origin: left;
+}
+
+.guarantee-faq-cue:hover {
+  color: var(--color-accent-wine-hover);
+  transform: translateY(2px);
+}
+
+.guarantee-faq-cue:hover::after {
+  transform: scaleX(1.08);
+}

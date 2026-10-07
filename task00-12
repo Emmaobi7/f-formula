@@ -1,0 +1,278 @@
+😂 That's it for the **main page structure**. Now we don't add another giant section—we close the site properly and then we can do a dedicated **polish pass**.
+
+Build **ONLY Section 12 — the site footer** of the redesigned Flirt Blueprint website.
+
+Do not modify Sections 1–11. Do not add any new marketing sections. Stop after completing the footer.
+
+## PURPOSE
+
+The footer should feel like the natural closing frame of the website.
+
+It should be minimal, sophisticated, and functional.
+
+This is NOT another sales section.
+
+---
+
+# 1. FOOTER STRUCTURE
+
+Create a premium editorial footer using the established design system.
+
+Recommended structure:
+
+### TOP
+
+Large brand lockup:
+
+**THE FLIRT BLUEPRINT**
+
+with the existing brand styling.
+
+Under it, a very short brand statement using verified existing copy if available.
+
+Do not invent a new company mission statement.
+
+---
+
+### NAVIGATION
+
+Create a clean footer navigation using only links that actually exist in the project.
+
+Possible groups:
+
+**EXPLORE**
+
+* The F-Formula
+* About
+* Results
+* FAQ
+
+**SUPPORT**
+
+* Contact
+* Terms
+* Privacy
+
+Only include pages/routes that actually exist.
+
+Do NOT create dead links.
+
+If legal pages do not exist yet, do not fabricate routes.
+
+---
+
+# 2. FINAL CTA
+
+Do NOT create another giant CTA.
+
+A small text-based invitation can be included if it fits naturally:
+
+**Ready to explore the F-Formula?**
+
+with:
+
+**GET THE FORMULA →**
+
+This should be visually secondary to the Section 11 CTA.
+
+If it makes the footer feel repetitive, omit it.
+
+---
+
+# 3. BRAND MARK
+
+Use the actual existing logo/wordmark if one exists.
+
+If the current project has no proper logo asset, use clean typography.
+
+Do not create a fake logo.
+
+Do not add unnecessary decorative graphics.
+
+---
+
+# 4. SOCIAL LINKS
+
+Inspect the existing project for authentic social profiles.
+
+Only include social links that are actually known/verified.
+
+Do not invent Instagram, YouTube, Facebook, TikTok, X, or other accounts.
+
+If authentic social links exist:
+
+Display them as understated text/icon links.
+
+Example:
+
+Instagram
+YouTube
+Facebook
+
+No giant social-media blocks.
+
+---
+
+# 5. LEGAL / COPYRIGHT
+
+Use the existing verified legal/copyright information from the project.
+
+If there is an existing copyright year/name, preserve it appropriately.
+
+Do not invent a company/legal entity.
+
+Do not add fake legal language.
+
+---
+
+# 6. VISUAL DESIGN
+
+The footer should likely use:
+
+**Deep burgundy or near-black background**
+
+with:
+
+Warm ivory typography.
+
+Use the same palette already established.
+
+Keep it restrained.
+
+No gradients.
+
+No giant background photographs.
+
+No glowing effects.
+
+No excessive rounded cards.
+
+---
+
+# 7. LAYOUT
+
+Desktop:
+
+A strong upper footer area:
+
+LEFT:
+Brand lockup + short statement
+
+RIGHT:
+Navigation columns
+
+Then a thin divider.
+
+Bottom row:
+
+© verified copyright information
+
+Legal links
+
+Optional verified social links
+
+Mobile:
+
+Stack naturally:
+
+Brand
+Navigation
+Support
+Social
+Legal
+
+Keep spacing generous.
+
+Do not make the mobile footer excessively tall.
+
+---
+
+# 8. TYPOGRAPHY
+
+Continue the existing typography system.
+
+Brand/headline:
+
+Editorial serif where appropriate.
+
+Navigation/body:
+
+Existing modern sans-serif.
+
+Use small uppercase labels sparingly.
+
+Do not over-letter-space everything.
+
+---
+
+# 9. INTERACTION
+
+Links should have subtle hover/focus states.
+
+For example:
+
+* opacity transition
+* underline reveal
+* slight color transition
+
+No exaggerated animation.
+
+Ensure keyboard focus is clearly visible.
+
+---
+
+# 10. ACCESSIBILITY
+
+Use semantic:
+
+`<footer>`
+
+Use proper navigation landmarks where appropriate.
+
+Ensure:
+
+* keyboard navigation
+* visible focus states
+* sufficient contrast
+* accessible link names
+* no icon-only links without accessible labels
+
+Respect `prefers-reduced-motion`.
+
+---
+
+# 11. IMPORTANT
+
+The footer should make the page feel **finished**.
+
+It should NOT feel like:
+
+* another sales section
+* a giant navigation sitemap
+* a template footer
+* a SaaS dashboard footer
+* a social-media wall
+
+Think:
+
+**the final page of a beautifully designed magazine.**
+
+Quiet. Structured. Complete.
+
+---
+
+## IMPLEMENTATION
+
+Reuse the exact design system established throughout the page.
+
+Do not modify Sections 1–11.
+
+Do not introduce new dependencies.
+
+Do not create fictional links or content.
+
+Build **ONLY the footer**.
+
+Stop when complete.
+
+After this, the main page structure is finished.

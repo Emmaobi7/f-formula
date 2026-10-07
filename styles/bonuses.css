@@ -1,0 +1,269 @@
+/* ==========================================================================
+   Section 7 — The Bonuses (Editorial Companion Resources Catalogue)
+   Editorial Catalogue Stack × Oversized Numerals × Fine-Line Dividers
+   ========================================================================== */
+
+.bonuses-section {
+  position: relative;
+  padding-top: clamp(4.5rem, 3.5rem + 5vw, 8.5rem);
+  padding-bottom: clamp(4.5rem, 3.5rem + 5vw, 8.5rem);
+  background-color: var(--color-bg-elevated);
+  border-top: 1px solid var(--color-border-subtle);
+  border-bottom: 1px solid var(--color-border-subtle);
+  overflow: hidden;
+}
+
+/* Subtle background accent */
+.bonuses-section::before {
+  content: '';
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 65vw;
+  height: 45vw;
+  max-width: 850px;
+  background: radial-gradient(ellipse, rgba(158, 116, 122, 0.035) 0%, rgba(88, 28, 38, 0.015) 50%, transparent 80%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ==========================================================================
+   Section Header
+   ========================================================================== */
+
+.bonuses-header {
+  position: relative;
+  z-index: var(--z-base);
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto clamp(3.5rem, 2.8rem + 3vw, 5.5rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bonuses-eyebrow-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: clamp(0.9rem, 0.7rem + 0.5vw, 1.35rem);
+}
+
+.bonuses-eyebrow-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.85rem;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-full);
+}
+
+.bonuses-eyebrow {
+  font-family: var(--font-body);
+  font-size: var(--font-size-eyebrow);
+  font-weight: 600;
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+}
+
+.bonuses-headline {
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 1.8rem + 2vw, 3.65rem);
+  font-weight: 400;
+  line-height: 1.12;
+  color: var(--color-text-primary);
+  letter-spacing: -0.02em;
+  margin-bottom: clamp(1rem, 0.8rem + 0.6vw, 1.5rem);
+  text-wrap: balance;
+}
+
+.bonuses-subtitle {
+  font-size: var(--font-size-body-lg);
+  font-weight: 400;
+  line-height: 1.68;
+  color: var(--color-text-secondary);
+  text-wrap: pretty;
+}
+
+/* ==========================================================================
+   Editorial Bonus Catalogue Stack
+   ========================================================================== */
+
+.bonuses-stack {
+  position: relative;
+  z-index: var(--z-base);
+  max-width: 1060px;
+  margin: 0 auto clamp(3.5rem, 2.5rem + 3vw, 5rem);
+  display: flex;
+  flex-direction: column;
+}
+
+.bonus-row-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: clamp(1.75rem, 1.4rem + 1vw, 2.5rem) clamp(1rem, 0.8rem + 1vw, 2rem);
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  margin-bottom: 1.25rem;
+  transition: border-color var(--transition-base), transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.bonus-row-item:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 860px) {
+  .bonus-row-item {
+    grid-template-columns: 72px 1fr auto;
+    align-items: center;
+    gap: clamp(1.5rem, 1rem + 1.2vw, 2.75rem);
+    padding: clamp(1.75rem, 1.4rem + 0.8vw, 2.25rem) clamp(1.5rem, 1.2rem + 1vw, 2.5rem);
+  }
+}
+
+.bonus-row-item:hover {
+  border-color: rgba(88, 28, 38, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px -8px rgba(24, 21, 20, 0.06);
+}
+
+/* Left: Oversized Restrained Numeral */
+.bonus-numeral {
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 1.85rem + 1vw, 3.25rem);
+  font-weight: 400;
+  line-height: 1;
+  color: var(--color-accent-rose);
+  letter-spacing: -0.025em;
+  transition: color var(--transition-fast);
+}
+
+.bonus-row-item:hover .bonus-numeral {
+  color: var(--color-accent-wine);
+}
+
+/* Center: Content & Description */
+.bonus-content-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.bonus-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 1.15rem + 0.4vw, 1.65rem);
+  font-weight: 500;
+  line-height: 1.25;
+  color: var(--color-text-primary);
+  letter-spacing: -0.01em;
+  transition: color var(--transition-fast);
+}
+
+.bonus-row-item:hover .bonus-title {
+  color: var(--color-accent-wine);
+}
+
+.bonus-description {
+  font-size: 0.9375rem;
+  line-height: 1.68;
+  color: var(--color-text-secondary);
+}
+
+/* Right: Format Pill / Included Signal */
+.bonus-meta-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+}
+
+@media (min-width: 860px) {
+  .bonus-meta-col {
+    align-items: flex-end;
+    white-space: nowrap;
+  }
+}
+
+.bonus-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: var(--tracking-meta);
+  text-transform: uppercase;
+  color: var(--color-accent-wine);
+  background-color: var(--color-accent-wine-subtle);
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-full);
+}
+
+.bonus-format-label {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  letter-spacing: var(--tracking-wide);
+}
+
+/* ==========================================================================
+   Section Transition & Next-Step Subtle CTA
+   ========================================================================== */
+
+.bonuses-footer {
+  position: relative;
+  z-index: var(--z-base);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bonuses-footer-statement {
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 1.05rem + 0.4vw, 1.45rem);
+  font-style: italic;
+  color: var(--color-text-primary);
+  max-width: 600px;
+  line-height: 1.4;
+}
+
+.bonuses-subtle-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent-wine);
+  padding: 0.5rem 0.25rem;
+  position: relative;
+  transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.bonuses-subtle-cta::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-accent-wine);
+  transition: transform var(--transition-fast);
+  transform-origin: left;
+}
+
+.bonuses-subtle-cta:hover {
+  color: var(--color-accent-wine-hover);
+  transform: translateX(3px);
+}
+
+.bonuses-subtle-cta:hover::after {
+  transform: scaleX(1.08);
+}

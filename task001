@@ -1,0 +1,391 @@
+We are redesigning The Flirt Blueprint / F-Formula website from the ground up.
+
+This is an established dating/flirting education brand with years of history. The goal is NOT to make it look like a new SaaS startup, dating app, sex site, or generic modern landing page.
+
+The new experience should feel like:
+
+EDITORIAL LUXURY × MODERN RELATIONSHIP EDUCATION × SENSUAL CONFIDENCE
+
+The design must communicate maturity, authority, intimacy, confidence, and sophistication.
+
+IMPORTANT:
+
+* Do not build the entire website yet.
+* For this task, build ONLY the global visual foundation, navigation, and hero section.
+* We will build the remaining sections incrementally afterward.
+* Do not invent product claims, testimonials, statistics, credentials, or guarantees.
+* Preserve the business's established identity while modernizing its digital presentation.
+* The existing giant promotional video is an important asset. We control its presentation completely; do not simply embed it in its old layout.
+
+TECHNICAL FOUNDATION
+
+Use the existing project stack where possible.
+
+Create a clean, production-quality frontend that can eventually be deployed on Render.
+
+Use reusable components and design tokens rather than hardcoding styles repeatedly.
+
+Establish CSS variables/design tokens for:
+
+* colors
+* typography
+* spacing
+* border radius
+* shadows
+* container widths
+* transitions
+
+Do not introduce unnecessary dependencies.
+
+VISUAL DIRECTION
+
+The site should NOT look:
+
+* like SaaS
+* like a dating app
+* like a pornography/adult site
+* like an "alpha male" pickup website
+* like a cheap coaching funnel
+* like a generic Webflow template
+* like a startup landing page
+* overly feminine
+* overly masculine
+* excessively red/black
+* visually loud
+
+Instead, create a restrained editorial aesthetic.
+
+COLOR SYSTEM
+
+Start with this direction:
+
+Background:
+
+* warm ivory / soft cream
+
+Primary text:
+
+* near-black charcoal
+
+Primary accent:
+
+* deep burgundy / wine
+
+Secondary accent:
+
+* muted rose / dusty mauve
+
+Supporting neutral:
+
+* warm taupe
+
+Do not use bright red.
+
+Do not use purple gradients.
+
+Do not use neon colors.
+
+Do not create gradient backgrounds unless specifically requested later.
+
+The page should feel tactile and warm rather than digital and synthetic.
+
+TYPOGRAPHY
+
+Use a sophisticated editorial serif for major display headlines and a modern neutral sans-serif for body/UI.
+
+Potential direction:
+
+* Display: Instrument Serif, Cormorant Garamond, or DM Serif Display
+* UI/body: Inter, Manrope, or Plus Jakarta Sans
+
+Choose the combination that produces the most sophisticated result.
+
+Typography should have:
+
+* strong hierarchy
+* generous line-height
+* intentional tracking
+* large editorial headlines
+* restrained body copy
+
+Do not use oversized typography simply for visual spectacle.
+
+GLOBAL LAYOUT
+
+Use a generous max-width container.
+
+Desktop should feel spacious and editorial rather than compressed.
+
+Use asymmetric compositions where appropriate.
+
+Avoid excessive cards.
+
+Avoid putting every piece of content inside a rounded rectangle.
+
+Avoid the modern SaaS pattern of:
+icon → rounded card → heading → paragraph → shadow.
+
+The visual system should rely more on:
+
+* typography
+* whitespace
+* photography/video
+* scale
+* alignment
+* subtle borders
+* controlled contrast
+
+NAVIGATION
+
+Create a minimal premium navigation.
+
+Structure:
+
+Left:
+FLIRT BLUEPRINT
+
+Center/right:
+The F-Formula
+About
+Results
+FAQ
+
+Primary CTA:
+GET THE FORMULA
+
+Keep the navigation visually light.
+
+Use a subtle bottom border or extremely restrained separation.
+
+Do not make the navbar huge.
+
+Do not use a giant hamburger menu on desktop.
+
+On mobile:
+
+* brand remains visible
+* compact menu trigger
+* CTA remains accessible
+* navigation should feel intentional, not like a generic mobile template
+
+The navigation may become sticky after scrolling, but keep the sticky state subtle.
+
+HERO
+
+The hero is the most important section.
+
+Do NOT reproduce the current website's old hero structure.
+
+The hero should feel like the opening spread of a premium editorial publication.
+
+Use an asymmetric composition.
+
+Suggested structure:
+
+LEFT / PRIMARY CONTENT:
+
+Small eyebrow:
+THE F-FORMULA
+
+Large headline:
+
+"Flirting isn't about having the perfect line.
+It's about knowing what happens next."
+
+Supporting copy:
+
+"A practical framework for creating chemistry, reading the moment, and knowing when to move the interaction forward."
+
+Primary CTA:
+EXPLORE THE F-FORMULA
+
+Secondary interaction:
+WATCH THE INTRO
+
+RIGHT / VISUAL:
+
+Create a large cinematic video composition.
+
+The video should NOT feel like an ordinary YouTube embed.
+
+Treat it as a major visual asset.
+
+The video can be any aspect ratio required by the design.
+
+Use a large editorial video frame with:
+
+* carefully chosen aspect ratio
+* subtle border radius around 12–16px
+* restrained shadow
+* cinematic crop
+* custom play button
+* custom overlay treatment
+* no ugly default player styling visible before interaction
+
+The video should feel closer to a campaign film / editorial image than a standard embedded video.
+
+IMPORTANT VIDEO RULES:
+
+* Do not distort the source video.
+* Preserve its natural aspect ratio.
+* Use object-fit: cover only where intentional cropping improves composition.
+* Never crop important faces/content.
+* Do not autoplay with sound.
+* If autoplay is used, it must be muted and playsinline.
+* Respect prefers-reduced-motion.
+* Lazy-load where appropriate.
+* Ensure mobile performance remains good.
+
+HERO COMPOSITION
+
+Do not make this a generic 50/50 two-column layout.
+
+Experiment with controlled overlap and asymmetry.
+
+The video can extend beyond the hero grid slightly.
+
+The headline and video should visually interact.
+
+Possible composition:
+
+Headline occupies approximately 45% of the visual field.
+
+Video occupies approximately 55–60%.
+
+Video can overlap the lower boundary of the hero.
+
+The next section should begin visually underneath the video rather than simply appearing after a conventional section boundary.
+
+The result should feel art-directed.
+
+HERO DETAILS
+
+Add a small metadata line beneath the CTA such as:
+
+3 PHASES · PRACTICAL FRAMEWORK · LIFETIME ACCESS
+
+ONLY use metadata that is actually confirmed in the existing product information. If these details are not available in the current code/content, leave the area as a clearly marked placeholder rather than inventing claims.
+
+Do not use fake urgency.
+
+Do not add countdown timers.
+
+Do not add fake notification popups.
+
+Do not add "X people are viewing this."
+
+Do not add fake scarcity.
+
+Do not add floating sales widgets.
+
+Do not add excessive badges.
+
+ANIMATION
+
+Motion should be subtle and premium.
+
+Use:
+
+* gentle fade/slide entrance
+* slight stagger between eyebrow, headline, copy, CTA
+* subtle video reveal
+* understated hover states
+
+Avoid:
+
+* bouncing
+* excessive parallax
+* spinning elements
+* dramatic text animations
+* typewriter effects
+* scroll-jacking
+* excessive blur animations
+
+The page should still feel premium with all animations disabled.
+
+RESPONSIVE DESIGN
+
+Desktop:
+
+* full editorial composition
+* large typography
+* large cinematic video
+* generous whitespace
+
+Tablet:
+
+* reduce typography
+* preserve asymmetry where practical
+* maintain visual hierarchy
+
+Mobile:
+
+* do NOT simply shrink the desktop layout
+* stack the hero intentionally
+* headline first
+* supporting copy
+* CTA
+* video
+* metadata
+
+The video should become a strong full-width visual element on mobile.
+
+Mobile spacing should feel generous.
+
+Do not allow text to become cramped.
+
+Do not allow horizontal overflow.
+
+ACCESSIBILITY
+
+Use semantic HTML.
+
+Use proper heading hierarchy.
+
+Ensure keyboard navigation.
+
+Ensure visible focus states.
+
+Ensure sufficient text contrast.
+
+Provide accessible video controls.
+
+Respect prefers-reduced-motion.
+
+Use descriptive aria-labels where necessary.
+
+QUALITY BAR
+
+Before considering this complete, inspect the result as if it were being presented to the owner of a successful established brand.
+
+Ask:
+
+"Does this look like a business that has existed for years and is now entering its next chapter?"
+
+NOT:
+
+"Does this look like a cool website?"
+
+It should feel established, intentional, sensual, sophisticated, and expensive without looking pretentious.
+
+IMPORTANT — DO NOT BUILD THE REST OF THE PAGE.
+
+Only implement:
+
+1. Global design tokens
+2. Typography foundation
+3. Navigation
+4. Hero
+5. Video presentation
+6. Responsive behavior
+
+After implementation, stop and report:
+
+* files changed
+* components created
+* fonts used
+* design tokens created
+* video behavior
+* any assumptions made
+
+Do not continue into the next sections until instructed.

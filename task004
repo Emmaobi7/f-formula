@@ -1,0 +1,329 @@
+Continue the redesign of The Flirt Blueprint / F-Formula website.
+
+The hero, Section 2 ("The Shift"), and Section 3 ("The Framework") are already implemented.
+
+DO NOT redesign or modify previous sections.
+
+Build ONLY SECTION 4 — THE WOMAN BEHIND THE METHOD.
+
+Do not build testimonials, pricing, bonuses, FAQ, or footer yet.
+
+---
+
+SECTION PURPOSE
+
+The visitor has now:
+
+1. Encountered the brand.
+2. Understood the problem.
+3. Seen that there is a framework.
+
+Now we need to answer:
+
+"Who created this, and why should I trust her?"
+
+This section introduces Marni and the history/authority behind The Flirt Blueprint.
+
+The business has existed for years.
+
+That history is an asset.
+
+Do NOT make the brand look like a newly invented internet product.
+
+The design should communicate:
+
+"Established expertise, presented with a new level of polish."
+
+---
+
+CONTENT RESEARCH
+
+Before implementing the section:
+
+Inspect the existing project/content for verified information about:
+
+* Marni's name
+* her role
+* her experience
+* the history of The Flirt Blueprint / F-Formula
+* established credentials
+* relevant publications/media appearances
+* verified experience or achievements
+
+ONLY use information that exists in the provided project/content or confirmed source material.
+
+Do NOT invent credentials.
+
+Do NOT invent publication logos.
+
+Do NOT invent years of experience.
+
+Do NOT invent client counts.
+
+Do NOT invent awards.
+
+If important information is not currently available, create a clearly marked content placeholder.
+
+---
+
+VISUAL CONCEPT
+
+This section should feel like an editorial profile.
+
+NOT:
+
+[headshot] [huge biography]
+
+Instead, create a composed visual story.
+
+Use a strong portrait of Marni if a real asset exists.
+
+If the project contains her photo, use it.
+
+If there is no suitable image asset, create a polished image placeholder component with an obvious asset path for later replacement.
+
+Do NOT download random stock photography.
+
+---
+
+LAYOUT
+
+Use an asymmetric editorial layout.
+
+Suggested composition:
+
+LEFT:
+
+Large portrait / photographic treatment.
+
+The image should feel editorial rather than like a generic coaching headshot.
+
+Possible treatment:
+
+* large vertical portrait
+* warm tonal treatment
+* subtle crop
+* restrained border
+* slight offset from the grid
+
+RIGHT:
+
+Small eyebrow:
+
+THE WOMAN BEHIND THE METHOD
+
+Large serif headline direction:
+
+"Experience changes the way you see the conversation."
+
+Use the strongest verified brand statement available instead if the existing copy provides one.
+
+Then:
+
+A concise biography.
+
+Keep it short.
+
+We are NOT reproducing the entire existing biography.
+
+Target approximately 120–180 words.
+
+Break the text into 2–3 short paragraphs.
+
+Use generous spacing.
+
+---
+
+HISTORY ELEMENT
+
+If the existing source material confirms the longevity/history of the business, introduce it as a subtle editorial fact.
+
+Example visual direction:
+
+"YEARS OF EXPERIENCE"
+
+or
+
+"ESTABLISHED EXPERTISE"
+
+with the verified number/year.
+
+If the exact number is not confirmed, DO NOT invent it.
+
+This should not look like a SaaS statistics section.
+
+It should feel like a small editorial annotation.
+
+---
+
+SIGNATURE / PERSONAL DETAIL
+
+If an authentic signature, handwritten mark, or existing brand asset exists in the project, it may be used.
+
+Do not generate a fake signature.
+
+If none exists, omit this.
+
+---
+
+IMAGE TREATMENT
+
+The image should communicate:
+
+* confidence
+* warmth
+* intelligence
+* maturity
+* personality
+
+Avoid overly sexualized photography.
+
+Avoid glamour-shot clichés.
+
+Avoid fake luxury aesthetics.
+
+The subject matter is sensual/dating education, but the founder presentation should communicate expertise rather than sexuality.
+
+---
+
+COPY TONE
+
+The writing should be:
+
+confident
+warm
+intelligent
+experienced
+human
+
+Avoid:
+
+"guru"
+"seduction expert" unless that is an established self-description
+"master"
+"make anyone fall for you"
+"secret female psychology"
+"control attraction"
+
+We want the audience to trust the person, not fear being manipulated.
+
+---
+
+VISUAL HIERARCHY
+
+Use:
+
+small uppercase eyebrow
+large serif headline
+short body copy
+small supporting credential/history element
+
+Do NOT add a large CTA here.
+
+If a CTA is appropriate, use a subtle text link:
+
+"Discover the method →"
+
+It should lead naturally toward the product section.
+
+---
+
+COLOR
+
+Maintain the existing visual system.
+
+Warm ivory base.
+
+Charcoal typography.
+
+Deep burgundy as a restrained accent.
+
+Use image tones that feel warm and editorial.
+
+Do not add a new color palette.
+
+---
+
+MOTION
+
+Use subtle image reveal on scroll.
+
+Potentially:
+
+* image opacity 0 → 1
+* slight vertical translation
+* text stagger
+
+Keep animation restrained.
+
+No dramatic image zoom.
+
+No parallax-heavy effects.
+
+---
+
+RESPONSIVE
+
+Desktop:
+
+Image approximately 45%.
+Content approximately 55%.
+
+Tablet:
+
+Maintain two-column composition if comfortable.
+
+Mobile:
+
+Image first.
+
+Then eyebrow.
+
+Then headline.
+
+Then biography.
+
+Then history/credential element.
+
+Do not make the portrait tiny.
+
+Give the image enough vertical presence to feel intentional.
+
+---
+
+IMPORTANT BRAND PRINCIPLE
+
+We are not trying to replace Marni with the new design.
+
+We are giving the existing founder and business a digital environment that feels worthy of the history behind it.
+
+The redesign should make someone think:
+
+"She has clearly been doing this for a long time — the website finally looks like it."
+
+---
+
+IMPLEMENTATION
+
+Create a reusable FounderProfile component.
+
+Keep content separated from presentation.
+
+Use structured data/content objects where appropriate.
+
+Do not hardcode repeated markup.
+
+Do not add fake content.
+
+Do not modify previous sections.
+
+Build ONLY Section 4.
+
+After implementation, stop and report:
+
+* files changed
+* components created
+* verified content used
+* assets used
+* placeholders remaining
+* responsive behavior
